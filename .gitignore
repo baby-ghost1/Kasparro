@@ -1,0 +1,41 @@
+# Resume dataset and files
+resumes/
+*.pdf
+*.zip
+
+# Environment variables
+.env
+
+# Python virtual environments
+venv/
+env/
+.venv/
+.env.local
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Assignment files
+*.docx
+
+# Generated output
+output/
