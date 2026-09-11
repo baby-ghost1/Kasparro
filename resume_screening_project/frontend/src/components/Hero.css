@@ -1,0 +1,19 @@
+.hero{max-width:640px;margin:0 auto;padding:5rem 2rem 2rem;text-align:center}
+.hero h1{font-size:2.6rem;font-weight:800;line-height:1.05;margin-bottom:1rem;background:linear-gradient(135deg,#fafafa,#a1a1aa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero>p{font-size:1rem;color:var(--text2);margin-bottom:2.5rem}
+
+.upload-zone{background:var(--card);border:2px dashed var(--border);border-radius:var(--radius-lg);padding:2.5rem 2rem;transition:all .25s}
+.upload-zone:hover{border-color:var(--accent);background:rgba(139,92,246,.04)}
+.upload-icon{font-size:2.5rem;margin-bottom:.75rem}
+.upload-zone h3{font-size:1.1rem;margin-bottom:.4rem}
+.upload-desc{font-size:.8rem;color:var(--text2);margin-bottom:1.5rem}
+.upload-desc code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:4px;font-size:.78rem}
+
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border-radius:10px;border:none;background:linear-gradient(135deg,var(--accent),var(--pink));color:#fff;font-size:.9rem;font-weight:600;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(139,92,246,.3)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 6px 28px rgba(139,92,246,.4)}
+.btn-primary:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+.progress-wrap{max-width:400px;margin:1.5rem auto 0}
+.progress-track{height:5px;background:var(--card);border-radius:3px;overflow:hidden;margin-bottom:.6rem}
+.progress-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--pink));transition:width .3s ease}
+.progress-text{text-align:center;font-size:.8rem;color:var(--text2)}

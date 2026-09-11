@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ResumeAI — Screening Dashboard</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  :root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-card: rgba(255,255,255,0.03);
+    --bg-glass: rgba(255,255,255,0.05);
+    --border: rgba(255,255,255,0.08);
+    --border-glow: rgba(99,102,241,0.3);
+    --text-primary: #f1f1f6;
+    --text-secondary: #8888a0;
+    --text-muted: #55556a;
+    --accent: #6366f1;
+    --accent-glow: rgba(99,102,241,0.4);
+    --green: #22c55e;
+    --green-dim: rgba(34,197,94,0.15);
+    --red: #ef4444;
+    --red-dim: rgba(239,68,68,0.15);
+    --amber: #f59e0b;
+    --amber-dim: rgba(245,158,11,0.15);
+    --cyan: #06b6d4;
+    --purple: #a855f7;
+    --pink: #ec4899;
+    --gradient-1: linear-gradient(135deg, #6366f1, #a855f7);
+    --gradient-2: linear-gradient(135deg, #06b6d4, #22c55e);
+    --gradient-3: linear-gradient(135deg, #f59e0b, #ef4444);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Animated background */
+  .bg-orbs {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+  }
+  .bg-orbs::before, .bg-orbs::after {
+    content: ''; position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.15;
+  }
+  .bg-orbs::before {
+    width: 600px; height: 600px; background: var(--accent);
+    top: -200px; right: -100px;
+    animation: orbFloat 20s ease-in-out infinite;
+  }
+  .bg-orbs::after {
+    width: 500px; height: 500px; background: var(--purple);
+    bottom: -150px; left: -100px;
+    animation: orbFloat 25s ease-in-out infinite reverse;
+  }
+  @keyframes orbFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(60px, -40px) scale(1.1); }
+    66% { transform: translate(-30px, 50px) scale(0.95); }
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 3px; }
+
+  /* Layout */
+  .app { position: relative; z-index: 1; }
+
+  /* Navbar */
+  .navbar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10,10,15,0.8); backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .navbar-brand {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 1.2rem; font-weight: 700;
+  }
+  .navbar-brand .logo {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: var(--gradient-1);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+  }
+  .navbar-status {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.8rem; color: var(--text-secondary);
+  }
+  .status-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--green);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
+    50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(34,197,94,0); }
+  }
+
+  /* Hero / Upload Section */
+  .hero {
+    max-width: 1200px; margin: 0 auto; padding: 4rem 2rem 2rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.8rem; font-weight: 800; line-height: 1.1;
+    background: linear-gradient(135deg, #f1f1f6, #8888a0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.1rem; color: var(--text-secondary);
+    max-width: 600px; margin: 0 auto 2.5rem;
+  }
+
+  /* Upload Card */
+  .upload-zone {
+    max-width: 560px; margin: 0 auto;
+    background: var(--bg-glass);
+    border: 2px dashed var(--border);
+    border-radius: 20px; padding: 3rem 2rem;
+    cursor: pointer; transition: all 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .upload-zone:hover, .upload-zone.dragover {
+    border-color: var(--accent);
+    background: rgba(99,102,241,0.05);
+    box-shadow: 0 0 40px var(--accent-glow);
+  }
+  .upload-zone .icon {
+    font-size: 3rem; margin-bottom: 1rem;
+    display: block;
+  }
+  .upload-zone h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+  .upload-zone p { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 28px; border-radius: 12px; border: none;
+    font-family: inherit; font-size: 0.95rem; font-weight: 600;
+    cursor: pointer; transition: all 0.25s ease;
+    text-decoration: none;
+  }
+  .btn-primary {
+    background: var(--gradient-1); color: #fff;
+    box-shadow: 0 4px 20px var(--accent-glow);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px var(--accent-glow);
+  }
+  .btn-primary:disabled {
+    opacity: 0.5; cursor: not-allowed; transform: none;
+  }
+  .btn-outline {
+    background: transparent; color: var(--text-primary);
+    border: 1px solid var(--border);
+  }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* Progress Bar */
+  .progress-container {
+    max-width: 560px; margin: 1.5rem auto 0; display: none;
+  }
+  .progress-container.active { display: block; }
+  .progress-bar-track {
+    height: 6px; background: var(--bg-glass); border-radius: 3px;
+    overflow: hidden; margin-bottom: 0.8rem;
+  }
+  .progress-bar-fill {
+    height: 100%; width: 0%; border-radius: 3px;
+    background: var(--gradient-1);
+    transition: width 0.3s ease;
+    animation: progressGlow 1.5s ease-in-out infinite;
+  }
+  @keyframes progressGlow {
+    0%, 100% { box-shadow: 0 0 10px var(--accent-glow); }
+    50% { box-shadow: 0 0 25px var(--accent-glow); }
+  }
+  .progress-text {
+    text-align: center; font-size: 0.85rem; color: var(--text-secondary);
+  }
+
+  /* Dashboard */
+  .dashboard { max-width: 1200px; margin: 0 auto; padding: 2rem; display: none; }
+  .dashboard.active { display: block; animation: fadeInUp 0.5s ease; }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Stats Grid */
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; margin-bottom: 2rem;
+  }
+  .stat-card {
+    background: var(--bg-glass); border: 1px solid var(--border);
+    border-radius: 16px; padding: 1.5rem;
+    transition: all 0.3s ease; position: relative; overflow: hidden;
+  }
+  .stat-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    border-radius: 16px 16px 0 0;
+  }
+  .stat-card.total::before { background: var(--gradient-1); }
+  .stat-card.eligible::before { background: var(--gradient-2); }
+  .stat-card.rejected::before { background: var(--gradient-3); }
+  .stat-card.failed::before { background: linear-gradient(135deg, #888, #555); }
+  .stat-card:hover { border-color: var(--border-glow); transform: translateY(-2px); }
+  .stat-label { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+  .stat-value { font-size: 2.2rem; font-weight: 800; }
+  .stat-card.total .stat-value { color: var(--accent); }
+  .stat-card.eligible .stat-value { color: var(--green); }
+  .stat-card.rejected .stat-value { color: var(--red); }
+  .stat-card.failed .stat-value { color: var(--amber); }
+
+  /* Score Distribution Chart */
+  .chart-section {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 768px) { .chart-section { grid-template-columns: 1fr; } }
+
+  .chart-card {
+    background: var(--bg-glass); border: 1px solid var(--border);
+    border-radius: 16px; padding: 1.5rem;
+  }
+  .chart-card h3 {
+    font-size: 0.9rem; color: var(--text-secondary);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.2rem;
+  }
+
+  /* Bar Chart */
+  .bar-chart { display: flex; flex-direction: column; gap: 8px; }
+  .bar-row { display: flex; align-items: center; gap: 10px; }
+  .bar-label { width: 60px; font-size: 0.75rem; color: var(--text-secondary); text-align: right; }
+  .bar-track { flex: 1; height: 24px; background: rgba(255,255,255,0.03); border-radius: 6px; overflow: hidden; }
+  .bar-fill {
+    height: 100%; border-radius: 6px;
+    display: flex; align-items: center; padding-left: 8px;
+    font-size: 0.7rem; font-weight: 600; color: #fff;
+    transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Donut */
+  .donut-container { display: flex; align-items: center; justify-content: center; gap: 2rem; }
+  .donut-svg { width: 140px; height: 140px; transform: rotate(-90deg); }
+  .donut-track { fill: none; stroke: rgba(255,255,255,0.05); stroke-width: 12; }
+  .donut-fill {
+    fill: none; stroke-width: 12; stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .donut-legend { display: flex; flex-direction: column; gap: 10px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+
+  /* Section Headers */
+  .section-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 1.2rem;
+  }
+  .section-header h2 { font-size: 1.3rem; font-weight: 700; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;
+  }
+  .badge-green { background: var(--green-dim); color: var(--green); }
+  .badge-red { background: var(--red-dim); color: var(--red); }
+
+  /* Candidate Cards */
+  .candidates-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 2rem; }
+
+  .candidate-card {
+    background: var(--bg-glass); border: 1px solid var(--border);
+    border-radius: 16px; padding: 1.5rem;
+    transition: all 0.3s ease; cursor: pointer;
+  }
+  .candidate-card:hover {
+    border-color: var(--border-glow);
+    box-shadow: 0 4px 30px rgba(99,102,241,0.08);
+    transform: translateY(-1px);
+  }
+  .candidate-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .candidate-info { display: flex; align-items: center; gap: 14px; }
+  .candidate-rank {
+    width: 40px; height: 40px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.9rem;
+  }
+  .rank-1 { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000; }
+  .rank-2 { background: linear-gradient(135deg, #94a3b8, #64748b); color: #000; }
+  .rank-3 { background: linear-gradient(135deg, #cd7c2f, #a0522d); color: #fff; }
+  .rank-default { background: var(--bg-card); color: var(--text-secondary); border: 1px solid var(--border); }
+  .candidate-name { font-size: 1.05rem; font-weight: 600; }
+  .candidate-email { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+  .candidate-score {
+    font-size: 1.6rem; font-weight: 800;
+    background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+
+  /* Score Breakdown Bars */
+  .score-breakdown { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1rem; }
+  .score-row { display: flex; align-items: center; gap: 8px; }
+  .score-cat { width: 50px; font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; }
+  .score-track { flex: 1; height: 8px; background: rgba(255,255,255,0.04); border-radius: 4px; overflow: hidden; }
+  .score-fill { height: 100%; border-radius: 4px; transition: width 1s ease; }
+  .score-fill.ai { background: var(--gradient-1); }
+  .score-fill.py { background: linear-gradient(90deg, #22c55e, #06b6d4); }
+  .score-fill.cloud { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+  .score-fill.gh { background: linear-gradient(90deg, #a855f7, #ec4899); }
+  .score-fill.eng { background: linear-gradient(90deg, #06b6d4, #6366f1); }
+  .score-val { width: 28px; font-size: 0.7rem; color: var(--text-secondary); text-align: right; }
+
+  /* Skills Tags */
+  .skills-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 0.8rem; }
+  .skill-tag {
+    padding: 3px 10px; border-radius: 6px; font-size: 0.7rem; font-weight: 500;
+    background: rgba(99,102,241,0.1); color: var(--accent); border: 1px solid rgba(99,102,241,0.15);
+  }
+
+  /* Strengths & Concerns */
+  .insights { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .insight {
+    display: flex; align-items: flex-start; gap: 6px;
+    font-size: 0.78rem; color: var(--text-secondary); flex: 1; min-width: 200px;
+  }
+  .insight-icon { font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
+
+  /* Expandable Details */
+  .candidate-details {
+    max-height: 0; overflow: hidden; transition: max-height 0.4s ease;
+    border-top: 1px solid transparent; margin-top: 0;
+  }
+  .candidate-card.expanded .candidate-details {
+    max-height: 600px; border-top-color: var(--border); margin-top: 1rem; padding-top: 1rem;
+  }
+  .detail-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  }
+  @media (max-width: 640px) { .detail-grid { grid-template-columns: 1fr; } }
+  .detail-block h4 {
+    font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;
+    letter-spacing: 0.5px; margin-bottom: 0.5rem;
+  }
+  .detail-block p, .detail-block li {
+    font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;
+  }
+  .detail-block ul { list-style: none; padding: 0; }
+  .detail-block li::before { content: '→ '; color: var(--accent); }
+
+  /* Rejected Section */
+  .rejected-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 2rem; }
+  .rejected-card {
+    background: var(--bg-glass); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1rem 1.2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    transition: all 0.2s ease;
+  }
+  .rejected-card:hover { border-color: rgba(239,68,68,0.3); }
+  .rejected-name { font-weight: 500; font-size: 0.95rem; }
+  .rejected-reason { font-size: 0.8rem; color: var(--red); }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding: 2rem; color: var(--text-muted);
+    font-size: 0.8rem; border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+
+  /* Tab Nav */
+  .tab-nav {
+    display: flex; gap: 4px; margin-bottom: 1.5rem;
+    background: var(--bg-glass); border-radius: 12px; padding: 4px;
+    border: 1px solid var(--border); width: fit-content;
+  }
+  .tab-btn {
+    padding: 8px 20px; border-radius: 8px; border: none;
+    background: transparent; color: var(--text-secondary);
+    font-family: inherit; font-size: 0.85rem; font-weight: 500;
+    cursor: pointer; transition: all 0.2s ease;
+  }
+  .tab-btn.active {
+    background: var(--accent); color: #fff;
+    box-shadow: 0 2px 10px var(--accent-glow);
+  }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; animation: fadeInUp 0.3s ease; }
+
+  /* Toast */
+  .toast {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 1000;
+    padding: 12px 20px; border-radius: 12px;
+    background: rgba(10,10,15,0.95); backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    font-size: 0.85rem; color: var(--text-primary);
+    transform: translateY(100px); opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .toast.show { transform: translateY(0); opacity: 1; }
+  .toast.success { border-color: var(--green); }
+  .toast.error { border-color: var(--red); }
+
+  /* Skeleton loader */
+  .skeleton {
+    background: linear-gradient(90deg, var(--bg-glass) 25%, rgba(255,255,255,0.08) 50%, var(--bg-glass) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+  }
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* Expand arrow */
+  .expand-arrow {
+    font-size: 0.8rem; color: var(--text-muted);
+    transition: transform 0.3s ease;
+  }
+  .candidate-card.expanded .expand-arrow { transform: rotate(180deg); }
+</style>
+</head>
+<body>
+
+<div class="bg-orbs"></div>
+
+<div class="app">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="logo">⚡</div>
+      <span>ResumeAI</span>
+    </div>
+    <div class="navbar-status">
+      <div class="status-dot"></div>
+      <span id="serverStatus">Server Online</span>
+    </div>
+  </nav>
+
+  <!-- Hero / Upload -->
+  <section class="hero" id="heroSection">
+    <h1>AI Resume<br>Screening Dashboard</h1>
+    <p>Upload resumes and get AI-powered rankings with detailed score breakdowns in seconds.</p>
+
+    <div class="upload-zone" id="uploadZone">
+      <span class="icon">📄</span>
+      <h3>Screen Your Resumes</h3>
+      <p>Click the button below to run the screening pipeline on <strong>./resumes</strong> directory</p>
+      <button class="btn btn-primary" id="screenBtn" onclick="startScreening()">
+        🚀 Start Screening
+      </button>
+    </div>
+
+    <div class="progress-container" id="progressContainer">
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="progressBar"></div>
+      </div>
+      <div class="progress-text" id="progressText">Initializing pipeline...</div>
+    </div>
+  </section>
+
+  <!-- Dashboard -->
+  <section class="dashboard" id="dashboard">
+    <!-- Stats -->
+    <div class="stats-grid" id="statsGrid"></div>
+
+    <!-- Charts -->
+    <div class="chart-section" id="chartSection"></div>
+
+    <!-- Tabs -->
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab('eligible')">🏆 Eligible</button>
+      <button class="tab-btn" onclick="switchTab('rejected')">❌ Rejected</button>
+    </div>
+
+    <!-- Eligible Tab -->
+    <div class="tab-content active" id="tab-eligible">
+      <div class="section-header">
+        <h2>Ranked Candidates</h2>
+        <span class="badge badge-green" id="eligibleBadge"></span>
+      </div>
+      <div class="candidates-list" id="candidatesList"></div>
+    </div>
+
+    <!-- Rejected Tab -->
+    <div class="tab-content" id="tab-rejected">
+      <div class="section-header">
+        <h2>Rejected Candidates</h2>
+        <span class="badge badge-red" id="rejectedBadge"></span>
+      </div>
+      <div class="rejected-list" id="rejectedList"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    ResumeAI — AI Resume Screening & Ranking System
+  </footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API_BASE = '/api';
+
+function showToast(msg, type = 'success') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = `toast ${type} show`;
+  setTimeout(() => t.className = 'toast', 3500);
+}
+
+async function startScreening() {
+  const btn = document.getElementById('screenBtn');
+  const progress = document.getElementById('progressContainer');
+  const bar = document.getElementById('progressBar');
+  const text = document.getElementById('progressText');
+
+  btn.disabled = true;
+  btn.innerHTML = '⏳ Screening...';
+  progress.classList.add('active');
+  bar.style.width = '10%';
+  text.textContent = 'Discovering resumes...';
+
+  // Simulate progress while API call runs
+  let pct = 10;
+  const steps = [
+    [20, 'Parsing PDF files...'],
+    [40, 'Extracting candidate info...'],
+    [60, 'Checking eligibility...'],
+    [75, 'Scoring candidates...'],
+    [85, 'Enriching GitHub data...'],
+    [92, 'Generating results...'],
+  ];
+  const interval = setInterval(() => {
+    if (steps.length > 0) {
+      const [p, t] = steps.shift();
+      pct = p;
+      bar.style.width = pct + '%';
+      text.textContent = t;
+    }
+  }, 2000);
+
+  try {
+    const res = await fetch(`${API_BASE}/screen`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ input_dir: './resumes', output_path: './output/results.json' })
+    });
+
+    clearInterval(interval);
+
+    if (!res.ok) throw new Error(`Server error: ${res.status}`);
+    const data = await res.json();
+
+    bar.style.width = '100%';
+    text.textContent = 'Done!';
+
+    setTimeout(async () => {
+      await loadResults();
+      showToast(`Screened ${data.total_resumes} resumes — ${data.eligible} eligible`);
+    }, 500);
+
+  } catch (err) {
+    clearInterval(interval);
+    bar.style.width = '0%';
+    text.textContent = 'Failed — falling back to cached results...';
+    showToast('API unavailable, loading cached results', 'error');
+    setTimeout(() => loadResults(), 1000);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '🚀 Start Screening';
+  }
+}
+
+async function loadResults() {
+  try {
+    const res = await fetch(`${API_BASE}/results`);
+    if (!res.ok) throw new Error('No results found');
+    const data = await res.json();
+    renderDashboard(data);
+  } catch (err) {
+    showToast('Failed to load results', 'error');
+  }
+}
+
+function renderDashboard(data) {
+  document.getElementById('heroSection').style.display = 'none';
+  document.getElementById('dashboard').classList.add('active');
+
+  renderStats(data.batch_summary);
+  renderCharts(data);
+  renderCandidates(data.eligible_candidates);
+  renderRejected(data.rejected_candidates);
+}
+
+function renderStats(summary) {
+  const grid = document.getElementById('statsGrid');
+  grid.innerHTML = `
+    <div class="stat-card total">
+      <div class="stat-label">Total Resumes</div>
+      <div class="stat-value" data-target="${summary.total_resumes}">0</div>
+    </div>
+    <div class="stat-card eligible">
+      <div class="stat-label">Eligible</div>
+      <div class="stat-value" data-target="${summary.eligible}">0</div>
+    </div>
+    <div class="stat-card rejected">
+      <div class="stat-label">Rejected</div>
+      <div class="stat-value" data-target="${summary.rejected}">0</div>
+    </div>
+    <div class="stat-card failed">
+      <div class="stat-label">Failed</div>
+      <div class="stat-value" data-target="${summary.failed}">0</div>
+    </div>
+  `;
+
+  // Animate counters
+  grid.querySelectorAll('.stat-value').forEach(el => {
+    const target = parseInt(el.dataset.target);
+    const duration = 1000;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(target * ease);
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+}
+
+function renderCharts(data) {
+  const section = document.getElementById('chartSection');
+  const candidates = data.eligible_candidates;
+
+  // Score distribution
+  const ranges = { '80-100': 0, '60-79': 0, '40-59': 0, '0-39': 0 };
+  candidates.forEach(c => {
+    if (c.total_score >= 80) ranges['80-100']++;
+    else if (c.total_score >= 60) ranges['60-79']++;
+    else if (c.total_score >= 40) ranges['40-59']++;
+    else ranges['0-39']++;
+  });
+
+  const maxRange = Math.max(...Object.values(ranges), 1);
+  const colors = ['#6366f1', '#22c55e', '#f59e0b', '#ef4444'];
+
+  const barChartHTML = Object.entries(ranges).map(([label, count], i) => `
+    <div class="bar-row">
+      <div class="bar-label">${label}</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width: ${(count/maxRange)*100}%; background: ${colors[i]};" data-width="${(count/maxRange)*100}">${count}</div>
+      </div>
+    </div>
+  `).join('');
+
+  // Donut chart
+  const total = data.batch_summary.total_resumes;
+  const eligible = data.batch_summary.eligible;
+  const rejected = data.batch_summary.rejected;
+  const failed = data.batch_summary.failed;
+
+  const circumference = 2 * Math.PI * 54;
+  const eligibleOffset = circumference - (eligible / total) * circumference;
+
+  const donutHTML = `
+    <svg class="donut-svg" viewBox="0 0 120 120">
+      <circle class="donut-track" cx="60" cy="60" r="54"/>
+      <circle class="donut-fill" cx="60" cy="60" r="54" stroke="#22c55e"
+        stroke-dasharray="${circumference}"
+        stroke-dashoffset="${eligibleOffset}"
+        data-offset="${eligibleOffset}"/>
+      <circle class="donut-fill" cx="60" cy="60" r="54" stroke="#ef4444"
+        stroke-dasharray="${circumference}"
+        stroke-dashoffset="${circumference}"
+        data-offset="${circumference - (rejected / total) * circumference}"/>
+    </svg>
+    <div class="donut-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div> Eligible (${eligible})</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Rejected (${rejected})</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#555"></div> Failed (${failed})</div>
+    </div>
+  `;
+
+  section.innerHTML = `
+    <div class="chart-card">
+      <h3>Score Distribution</h3>
+      <div class="bar-chart">${barChartHTML}</div>
+    </div>
+    <div class="chart-card">
+      <h3>Pipeline Results</h3>
+      <div class="donut-container">${donutHTML}</div>
+    </div>
+  `;
+
+  // Animate donut
+  setTimeout(() => {
+    section.querySelectorAll('.donut-fill').forEach(el => {
+      el.style.strokeDashoffset = el.dataset.offset;
+    });
+  }, 300);
+}
+
+function renderCandidates(candidates) {
+  const list = document.getElementById('candidatesList');
+  const badge = document.getElementById('eligibleBadge');
+  badge.textContent = `${candidates.length} candidates`;
+
+  list.innerHTML = candidates.map((c, i) => {
+    const sb = c.score_breakdown;
+    const rankClass = i < 3 ? `rank-${i+1}` : 'rank-default';
+    const skills = (c.matched_skills || []).slice(0, 6);
+    const strengths = (c.strengths || []).slice(0, 2);
+    const concerns = (c.concerns || []).slice(0, 2);
+
+    return `
+    <div class="candidate-card" onclick="this.classList.toggle('expanded')">
+      <div class="candidate-header">
+        <div class="candidate-info">
+          <div class="candidate-rank ${rankClass}">#${c.rank}</div>
+          <div>
+            <div class="candidate-name">${esc(c.candidate_name)}</div>
+            <div class="candidate-email">${esc(c.email || '')}</div>
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <div class="candidate-score">${c.total_score}</div>
+          <div class="expand-arrow">▼</div>
+        </div>
+      </div>
+
+      <div class="score-breakdown">
+        ${scoreBar('AI', sb.ai_project_depth, 40, 'ai')}
+        ${scoreBar('Py', sb.python_backend, 30, 'py')}
+        ${scoreBar('Cloud', sb.cloud_fullstack, 15, 'cloud')}
+        ${scoreBar('GH', sb.github, 10, 'gh')}
+        ${scoreBar('Eng', sb.engineering_depth, 5, 'eng')}
+      </div>
+
+      <div class="skills-row">
+        ${skills.map(s => `<span class="skill-tag">${esc(s)}</span>`).join('')}
+      </div>
+
+      <div class="insights">
+        ${strengths.map(s => `<div class="insight"><span class="insight-icon">✅</span> ${esc(s)}</div>`).join('')}
+        ${concerns.map(s => `<div class="insight"><span class="insight-icon">⚠️</span> ${esc(s)}</div>`).join('')}
+      </div>
+
+      <div class="candidate-details">
+        <div class="detail-grid">
+          <div class="detail-block">
+            <h4>Project Summary</h4>
+            <p>${esc(c.project_summary || 'N/A')}</p>
+          </div>
+          <div class="detail-block">
+            <h4>GitHub Enrichment</h4>
+            <p>${esc(c.github_summary || 'No GitHub profile found')}</p>
+          </div>
+          ${c.experience_summary ? `
+          <div class="detail-block">
+            <h4>Experience</h4>
+            <p>${esc(c.experience_summary)}</p>
+          </div>` : ''}
+          ${c.projects_analyzed ? `
+          <div class="detail-block">
+            <h4>Projects Analyzed</h4>
+            <ul>${c.projects_analyzed.map(p => `<li>${esc(p)}</li>`).join('')}</ul>
+          </div>` : ''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderRejected(rejected) {
+  const list = document.getElementById('rejectedList');
+  const badge = document.getElementById('rejectedBadge');
+  badge.textContent = `${rejected.length} candidates`;
+
+  list.innerHTML = rejected.map(c => `
+    <div class="rejected-card">
+      <div class="rejected-name">${esc(c.candidate_name || c.filename)}</div>
+      <div class="rejected-reason">${esc((c.rejection_reasons || []).join('; '))}</div>
+    </div>
+  `).join('');
+}
+
+function scoreBar(label, value, max, cls) {
+  return `
+    <div class="score-row">
+      <div class="score-cat">${label}</div>
+      <div class="score-track">
+        <div class="score-fill ${cls}" style="width: ${(value/max)*100}%;"></div>
+      </div>
+      <div class="score-val">${value}/${max}</div>
+    </div>`;
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.getElementById(`tab-${tab}`).classList.add('active');
+  event.target.classList.add('active');
+}
+
+function esc(str) {
+  if (!str) return '';
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// On load, check if results already exist
+window.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const res = await fetch(`${API_BASE}/results`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data.batch_summary) renderDashboard(data);
+    }
+  } catch (e) {}
+});
+</script>
+
+</body>
+</html>

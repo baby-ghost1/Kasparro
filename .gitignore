@@ -39,3 +39,7 @@ Thumbs.db
 
 # Generated output
 output/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

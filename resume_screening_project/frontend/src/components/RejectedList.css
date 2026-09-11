@@ -1,0 +1,6 @@
+.rejected-list{display:flex;flex-direction:column;gap:8px}
+.rejected-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.8rem 1rem;display:flex;align-items:center;justify-content:space-between;transition:border-color .2s}
+.rejected-card:hover{border-color:rgba(239,68,68,.25)}
+.rejected-name{font-weight:500;font-size:.88rem}
+.rejected-reason{font-size:.75rem;color:var(--red);text-align:right;max-width:50%}
+.empty{color:var(--text3);font-size:.85rem;text-align:center;padding:2rem}
