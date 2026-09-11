@@ -79,7 +79,7 @@ project/
 ```bash
 # Clone the repository
 git clone https://github.com/baby-ghost1/Kasparro.git
-cd Kasparro
+cd Kasparro/backend
 
 # Create a virtual environment (optional but recommended)
 python -m venv venv
@@ -111,13 +111,13 @@ cp .env.example .env
 ### Screen Resumes (CLI)
 
 ```bash
-python main.py screen --input ./resumes --output ./output/results.json
+python main.py screen --input ./data/resumes --output ./data/output/results.json
 ```
 
 ### Terminal Report
 
 ```bash
-python main.py report --results ./output/results.json
+python main.py report --results ./data/output/results.json
 ```
 
 ### FastAPI Server
@@ -133,7 +133,7 @@ Then:
 ### Legacy CLI (still works)
 
 ```bash
-python main.py --input ./resumes --output ./output/results.json
+python main.py --input ./data/resumes --output ./data/output/results.json
 ```
 
 ## Output Format
