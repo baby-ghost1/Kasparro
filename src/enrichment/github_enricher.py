@@ -9,6 +9,8 @@ from src.models import GitHubEnrichment
 
 logger = logging.getLogger(__name__)
 
+_github_cache: dict[str, GitHubEnrichment] = {}
+
 
 def _extract_username(github_url: str) -> str:
     m = re.search(r'github\.com/([A-Za-z0-9_.-]+)', github_url)
@@ -174,6 +176,9 @@ def enrich_github(github_url: str, config: Config) -> GitHubEnrichment:
             error="Invalid GitHub URL format",
         )
 
+    if username in _github_cache:
+        return _github_cache[username]
+
     enrichment = GitHubEnrichment(
         has_github=True,
         username=username,
@@ -201,5 +206,7 @@ def enrich_github(github_url: str, config: Config) -> GitHubEnrichment:
     if not parts:
         parts.append("Limited GitHub activity")
     enrichment.summary = "; ".join(parts)
+
+    _github_cache[username] = enrichment
 
     return enrichment

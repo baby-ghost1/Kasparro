@@ -1,9 +1,33 @@
 import json
 import logging
 import os
+from pydantic import BaseModel, Field
 from src.config import Config
 
 logger = logging.getLogger(__name__)
+
+
+class LLMResumeExtraction(BaseModel):
+    name: str = ""
+    email: str = ""
+    phone: str = ""
+    github_url: str = ""
+    skills: list[str] = Field(default_factory=list)
+    project_summaries: list[dict] = Field(default_factory=list)
+    experience_summaries: list[dict] = Field(default_factory=list)
+    education_summaries: list[dict] = Field(default_factory=list)
+    ai_evidence: list[str] = Field(default_factory=list)
+    python_evidence: list[str] = Field(default_factory=list)
+    strengths: list[str] = Field(default_factory=list)
+    weaknesses: list[str] = Field(default_factory=list)
+
+
+class LLMProjectScore(BaseModel):
+    depth_score: int = Field(default=0, ge=0, le=40)
+    is_shallow: bool = False
+    depth_signals: list[str] = Field(default_factory=list)
+    concerns: list[str] = Field(default_factory=list)
+    summary: str = ""
 
 
 class LLMAdapter:
@@ -30,7 +54,7 @@ class LLMAdapter:
             logger.error(f"Failed to initialize LLM client: {e}")
             return None
 
-    def extract_resume_info(self, raw_text: str, filename: str) -> dict | None:
+    def extract_resume_info(self, raw_text: str, filename: str) -> LLMResumeExtraction | None:
         client = self._get_client()
         if client is None:
             return None
@@ -68,7 +92,8 @@ Return ONLY valid JSON, no explanation."""
                     content = content.split("\n", 1)[1]
                     if content.endswith("```"):
                         content = content[:-3]
-                return json.loads(content)
+                raw = json.loads(content)
+                return LLMResumeExtraction.model_validate(raw)
             return None
         except json.JSONDecodeError as e:
             logger.warning(f"LLM returned invalid JSON for {filename}: {e}")
@@ -77,7 +102,7 @@ Return ONLY valid JSON, no explanation."""
             logger.warning(f"LLM call failed for {filename}: {e}")
             return None
 
-    def score_ai_project(self, project_name: str, project_description: str, technologies: list[str]) -> dict | None:
+    def score_ai_project(self, project_name: str, project_description: str, technologies: list[str]) -> LLMProjectScore | None:
         client = self._get_client()
         if client is None:
             return None
@@ -110,7 +135,8 @@ Return ONLY valid JSON."""
                     content = content.split("\n", 1)[1]
                     if content.endswith("```"):
                         content = content[:-3]
-                return json.loads(content)
+                raw = json.loads(content)
+                return LLMProjectScore.model_validate(raw)
             return None
         except Exception as e:
             logger.warning(f"LLM scoring failed for {project_name}: {e}")
