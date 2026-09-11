@@ -1,0 +1,3811 @@
+{
+  "batch_summary": {
+    "total_resumes": 50,
+    "successfully_parsed": 50,
+    "eligible": 41,
+    "rejected": 9,
+    "failed": 0
+  },
+  "eligible_candidates": [
+    {
+      "filename": "candidate_13.pdf",
+      "candidate_name": "Yash Maini",
+      "eligible": true,
+      "rank": 1,
+      "total_score": 88,
+      "score_breakdown": {
+        "ai_project_depth": 40,
+        "python_backend": 30,
+        "cloud_fullstack": 13,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 88,
+        "evidence": {
+          "ai_project_depth": [
+            "5 AI projects found",
+            "Deep AI framework usage (21 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "RAG pipeline",
+            "Tool calling",
+            "Multi-agent system",
+            "Orchestration",
+            "Fine-tuning",
+            "Agentic system",
+            "AI/Agentic depth: 5 projects, 21 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, flask, gunicorn",
+            "Async programming: async",
+            "Database experience: postgresql, mongodb, postgres",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python projects: 2",
+            "Python work experience: 1",
+            "Python/Backend: 3 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, gcp, terraform, ci/cd, aws",
+            "Containerization: docker",
+            "Full-stack breadth (6 technologies)",
+            "Cloud/FullStack: 5 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (12 signals)",
+            "Signals: concurrent, retry, docker, schema, microservices",
+            "Engineering depth: 12 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Embeddings",
+        "Scikit-Learn",
+        "Agent",
+        "Python",
+        "python",
+        "Pinecone"
+      ],
+      "project_summary": "5 AI/ML project(s); Frameworks: tensorflow, pinecone, agent, scikit-learn, embeddings; Python projects: 1; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "Multiple AI projects (5)",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "Yashmaini30",
+        "profile_url": "https://github.com/Yashmaini30",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_41.pdf",
+      "candidate_name": "Hari Shanker Sharma",
+      "eligible": true,
+      "rank": 2,
+      "total_score": 85,
+      "score_breakdown": {
+        "ai_project_depth": 40,
+        "python_backend": 25,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 85,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (12 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "RAG pipeline",
+            "Vector search/store",
+            "Tool calling",
+            "Orchestration",
+            "AI/Agentic depth: 2 projects, 12 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: uvicorn, fastapi",
+            "Async programming: async",
+            "Database experience: postgresql, redis, mongodb",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python/Backend: 2 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, github actions, ci/cd, aws, kubernetes",
+            "Frontend: react.js, vue, next.js, react",
+            "Containerization: docker, kubernetes",
+            "Full-stack breadth (13 technologies)",
+            "Cloud/FullStack: 5 cloud, 4 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (12 signals)",
+            "Signals: docker, observability, pipeline, test suite, ci/cd",
+            "Engineering depth: 12 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Vector Search",
+        "Embedding",
+        "Python",
+        "python",
+        "Langchain",
+        "Hugging Face"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: langchain, rag, hugging face, vector search, embedding; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_28.pdf",
+      "candidate_name": "Sumaiya Sultana Shaik",
+      "eligible": true,
+      "rank": 3,
+      "total_score": 83,
+      "score_breakdown": {
+        "ai_project_depth": 40,
+        "python_backend": 23,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 83,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (10 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "Evaluation pipeline",
+            "RAG pipeline",
+            "Multi-agent system",
+            "Orchestration",
+            "Agentic system",
+            "Detailed AI project: • Privacy Risk Intelligence Platform [GitHub]",
+            "Detailed AI project: REST API backend and React frontend end",
+            "AI/Agentic depth: 2 projects, 10 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Database experience: postgresql, mongodb",
+            "API development: rest api",
+            "Data processing: data pipeline",
+            "Python projects: 2",
+            "Python work experience: 1",
+            "Python/Backend: 1 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: gcp, ci/cd, docker",
+            "Frontend: react",
+            "Containerization: docker",
+            "Full-stack breadth (9 technologies)",
+            "Cloud/FullStack: 3 cloud, 1 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (12 signals)",
+            "Signals: retry, docker, microservices, pipeline, test suite",
+            "Engineering depth: 12 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Nlp",
+        "Retrieval-Augmented",
+        "Python",
+        "python",
+        "Langchain",
+        "Prompt Engineering"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: retrieval-augmented, nlp, langchain, rag, prompt engineering; Python projects: 1; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_26.pdf",
+      "candidate_name": "Thejeshwaar Paasila",
+      "eligible": true,
+      "rank": 4,
+      "total_score": 81,
+      "score_breakdown": {
+        "ai_project_depth": 36,
+        "python_backend": 25,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 81,
+        "evidence": {
+          "ai_project_depth": [
+            "3 AI projects found",
+            "Deep AI framework usage (11 frameworks)",
+            "RAG/retrieval implementation",
+            "RAG pipeline",
+            "Orchestration",
+            "Detailed AI project: WSGI routing, and multi",
+            "AI/Agentic depth: 3 projects, 11 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: flask",
+            "Database experience: postgresql, supabase, sqlite, mongodb",
+            "API development: rest api",
+            "Data processing: etl",
+            "Python projects: 2",
+            "Python work experience: 1",
+            "Python/Backend: 1 frameworks, 4 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: ci/cd, docker, google cloud",
+            "Frontend: next.js, react",
+            "Containerization: docker",
+            "Full-stack breadth (12 technologies)",
+            "Cloud/FullStack: 3 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (10 signals)",
+            "Signals: concurrent, docker, schema, webhook, pipeline",
+            "Engineering depth: 10 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Nlp",
+        "Openai",
+        "Python",
+        "python",
+        "Prompt Engineering",
+        "Hugging Face"
+      ],
+      "project_summary": "3 AI/ML project(s); Frameworks: nlp, hugging face, rag, openai, prompt engineering; Python projects: 1; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "Multiple AI projects (3)",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "tejaharleys",
+        "profile_url": "https://github.com/tejaharleys",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_35.pdf",
+      "candidate_name": "Prathamesh",
+      "eligible": true,
+      "rank": 5,
+      "total_score": 81,
+      "score_breakdown": {
+        "ai_project_depth": 40,
+        "python_backend": 21,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 81,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (15 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "RAG pipeline",
+            "Vector search/store",
+            "Multi-agent system",
+            "Orchestration",
+            "Agentic system",
+            "AI/Agentic depth: 2 projects, 15 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, celery",
+            "Async programming: async",
+            "Database experience: postgresql, redis",
+            "API development: rest api",
+            "Python/Backend: 2 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, github actions, ci/cd, aws, kubernetes",
+            "Frontend: react.js, next.js, react",
+            "Containerization: docker, kubernetes",
+            "Full-stack breadth (10 technologies)",
+            "Cloud/FullStack: 5 cloud, 3 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (20 signals)",
+            "Signals: kafka, docker, microservices, observability, pipeline",
+            "Engineering depth: 20 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Rag",
+        "Agent",
+        "Embedding",
+        "Python",
+        "python",
+        "Pytorch"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: tensorflow, rag, embedding, pytorch, agent; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_22.pdf",
+      "candidate_name": "PRAJWAL A S",
+      "eligible": true,
+      "rank": 6,
+      "total_score": 79,
+      "score_breakdown": {
+        "ai_project_depth": 40,
+        "python_backend": 30,
+        "cloud_fullstack": 4,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 79,
+        "evidence": {
+          "ai_project_depth": [
+            "7 AI projects found",
+            "Deep AI framework usage (14 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "RAG pipeline",
+            "Vector search/store",
+            "Tool calling",
+            "Multi-agent system",
+            "Detailed AI project: AI",
+            "AI/Agentic depth: 7 projects, 14 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: uvicorn, flask, fastapi",
+            "Async programming: async",
+            "Database experience: postgresql",
+            "API development: rest api",
+            "Python projects: 4",
+            "Python work experience: 1",
+            "Python/Backend: 3 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Frontend: react",
+            "Full-stack breadth (7 technologies)",
+            "Cloud/FullStack: 0 cloud, 1 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (10 signals)",
+            "Signals: schema, asyncio, webhook, pipeline, joi",
+            "Engineering depth: 10 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Mistral",
+        "Python",
+        "python",
+        "Embedding",
+        "Langchain",
+        "Ollama"
+      ],
+      "project_summary": "7 AI/ML project(s); Frameworks: langchain, mistral, rag, embedding, ollama; Python projects: 2; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Strong Python/Backend engineering",
+        "Strong engineering practices",
+        "Multiple AI projects (7)",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited cloud/full-stack evidence"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "prajwalas1",
+        "profile_url": "https://github.com/prajwalas1",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_33.pdf",
+      "candidate_name": "Vaibhav Wakde",
+      "eligible": true,
+      "rank": 7,
+      "total_score": 79,
+      "score_breakdown": {
+        "ai_project_depth": 37,
+        "python_backend": 27,
+        "cloud_fullstack": 10,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 79,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (21 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "Vector search/store",
+            "Tool calling",
+            "Fine-tuning",
+            "Detailed AI project: AI",
+            "AI/Agentic depth: 1 projects, 21 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, flask",
+            "Async programming: async",
+            "Database experience: mysql, sqlite",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python projects: 1",
+            "Python work experience: 1",
+            "Python/Backend: 2 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, aws",
+            "Containerization: docker",
+            "Full-stack breadth (6 technologies)",
+            "Cloud/FullStack: 2 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (8 signals)",
+            "Signals: docker, microservices, asyncio, caching, pytest",
+            "Engineering depth: 8 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Chroma",
+        "Agent",
+        "Python",
+        "python",
+        "Gpt",
+        "Agentic",
+        "Ollama"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: ollama, gpt, chroma, agent, agentic; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_08.pdf",
+      "candidate_name": "Arjun Kumar",
+      "eligible": true,
+      "rank": 8,
+      "total_score": 76,
+      "score_breakdown": {
+        "ai_project_depth": 34,
+        "python_backend": 25,
+        "cloud_fullstack": 12,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 76,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (17 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "Orchestration",
+            "Detailed AI project: Sep 2025",
+            "AI/Agentic depth: 2 projects, 17 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, django",
+            "Async programming: async",
+            "Database experience: postgresql, mongodb",
+            "API development: rest api",
+            "Python projects: 2",
+            "Python/Backend: 2 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: ci/cd, aws",
+            "Frontend: reactjs, next.js, react",
+            "Full-stack breadth (12 technologies)",
+            "Cloud/FullStack: 2 cloud, 3 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (8 signals)",
+            "Signals: concurrent, threading, concurrency, pipeline, ci/cd",
+            "Engineering depth: 8 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Rag",
+        "Nlp",
+        "Python",
+        "python",
+        "Langchain",
+        "Hugging Face"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: tensorflow, nlp, langchain, hugging face, rag; Python projects: 2",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "arjunkumaritsme12",
+        "profile_url": "https://github.com/arjunkumaritsme12",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_17.pdf",
+      "candidate_name": "Gourab Das",
+      "eligible": true,
+      "rank": 9,
+      "total_score": 75,
+      "score_breakdown": {
+        "ai_project_depth": 25,
+        "python_backend": 30,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 75,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (6 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "AI/Agentic depth: 1 projects, 6 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, flask, django",
+            "Async programming: async",
+            "Database experience: postgresql, mysql, redis, mongodb",
+            "API development: rest api",
+            "Python projects: 2",
+            "Python/Backend: 3 frameworks, 4 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, github actions, nginx, ci/cd, aws",
+            "Frontend: reactjs, react",
+            "Containerization: docker",
+            "Full-stack breadth (11 technologies)",
+            "Cloud/FullStack: 5 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (11 signals)",
+            "Signals: concurrent, kafka, docker, microservices, pipeline",
+            "Engineering depth: 11 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Agent",
+        "Langgraph",
+        "Python",
+        "python",
+        "Langchain",
+        "Gemini"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: langchain, rag, agent, langgraph, gemini; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Solid AI project experience",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "gdas37467",
+        "profile_url": "https://github.com/gdas37467",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_47.pdf",
+      "candidate_name": "Kiran Naregal",
+      "eligible": true,
+      "rank": 10,
+      "total_score": 75,
+      "score_breakdown": {
+        "ai_project_depth": 40,
+        "python_backend": 17,
+        "cloud_fullstack": 14,
+        "github": 0,
+        "engineering_depth": 4,
+        "total": 75,
+        "evidence": {
+          "ai_project_depth": [
+            "4 AI projects found",
+            "Deep AI framework usage (15 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "Multi-agent system",
+            "Orchestration",
+            "Agentic system",
+            "Detailed AI project: Built a multi",
+            "AI/Agentic depth: 4 projects, 15 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Database experience: mongodb",
+            "Data processing: pandas",
+            "Python projects: 1",
+            "Python work experience: 1",
+            "Python/Backend: 1 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, aws",
+            "Frontend: next.js, react",
+            "Containerization: docker",
+            "Full-stack breadth (8 technologies)",
+            "Cloud/FullStack: 2 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Good engineering depth (5 signals)",
+            "Signals: docker, pipeline, pydantic, validation, logging",
+            "Engineering depth: 5 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Openai",
+        "Python",
+        "python",
+        "Langchain",
+        "Anthropic",
+        "Hugging Face"
+      ],
+      "project_summary": "4 AI/ML project(s); Frameworks: anthropic, langchain, rag, hugging face, openai; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "Multiple AI projects (4)",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "kiran-naregal",
+        "profile_url": "https://github.com/kiran-naregal",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_50.pdf",
+      "candidate_name": "Nevil Jasmin Mehta",
+      "eligible": true,
+      "rank": 11,
+      "total_score": 75,
+      "score_breakdown": {
+        "ai_project_depth": 26,
+        "python_backend": 30,
+        "cloud_fullstack": 14,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 75,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (6 frameworks)",
+            "RAG/retrieval implementation",
+            "RAG pipeline",
+            "Vector search/store",
+            "AI/Agentic depth: 1 projects, 6 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, flask, celery, django",
+            "Async programming: async",
+            "Database experience: postgresql, mysql, redis, mongodb",
+            "Data processing: pandas",
+            "Python projects: 1",
+            "Python work experience: 1",
+            "Python/Backend: 4 frameworks, 4 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, aws",
+            "Frontend: react.js, react",
+            "Containerization: docker",
+            "Full-stack breadth (13 technologies)",
+            "Cloud/FullStack: 2 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (6 signals)",
+            "Signals: docker, pipeline, joi, scalability, celery",
+            "Engineering depth: 6 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Nlp",
+        "Vector Database",
+        "Embedding",
+        "Python",
+        "python",
+        "Prompt Engineering"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: nlp, embedding, rag, prompt engineering, vector database; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Solid AI project experience",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_38.pdf",
+      "candidate_name": "PAVANI A",
+      "eligible": true,
+      "rank": 12,
+      "total_score": 72,
+      "score_breakdown": {
+        "ai_project_depth": 23,
+        "python_backend": 30,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 4,
+        "total": 72,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (7 frameworks)",
+            "RAG/retrieval implementation",
+            "AI/Agentic depth: 2 projects, 7 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, flask, django",
+            "Database experience: postgresql, mysql, mongodb",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python projects: 3",
+            "Python/Backend: 3 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: ci/cd, jenkins, docker",
+            "Frontend: react.js, next.js, react",
+            "Containerization: docker",
+            "Full-stack breadth (12 technologies)",
+            "Cloud/FullStack: 3 cloud, 3 frontend"
+          ],
+          "engineering_depth": [
+            "Good engineering depth (5 signals)",
+            "Signals: docker, pipeline, ci/cd, validation, jenkins",
+            "Engineering depth: 5 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Rag",
+        "Keras",
+        "Python",
+        "python",
+        "Deep Learning",
+        "Llama"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: tensorflow, rag, deep learning, keras, llama; Python projects: 2; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Solid AI project experience",
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "Pavani-A",
+        "profile_url": "https://github.com/Pavani-A",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_15.pdf",
+      "candidate_name": "HARSHA A",
+      "eligible": true,
+      "rank": 13,
+      "total_score": 68,
+      "score_breakdown": {
+        "ai_project_depth": 30,
+        "python_backend": 21,
+        "cloud_fullstack": 14,
+        "github": 0,
+        "engineering_depth": 3,
+        "total": 68,
+        "evidence": {
+          "ai_project_depth": [
+            "6 AI projects found",
+            "Deep AI framework usage (9 frameworks)",
+            "RAG/retrieval implementation",
+            "State management",
+            "AI/Agentic depth: 6 projects, 9 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Database experience: postgresql, mysql",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python projects: 2",
+            "Python/Backend: 1 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, azure",
+            "Frontend: react.js, react",
+            "Containerization: docker",
+            "Full-stack breadth (9 technologies)",
+            "Cloud/FullStack: 2 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Moderate engineering depth (3 signals)",
+            "Signals: docker, schema, pipeline",
+            "Engineering depth: 3 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Rag",
+        "Computer Vision",
+        "Embedding",
+        "Python",
+        "python",
+        "Image Classification"
+      ],
+      "project_summary": "6 AI/ML project(s); Frameworks: tensorflow, rag, image classification, embedding, computer vision; Python projects: 2; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Multiple AI projects (6)",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_07.pdf",
+      "candidate_name": "Jyandeep Baishya",
+      "eligible": true,
+      "rank": 14,
+      "total_score": 67,
+      "score_breakdown": {
+        "ai_project_depth": 40,
+        "python_backend": 17,
+        "cloud_fullstack": 6,
+        "github": 0,
+        "engineering_depth": 4,
+        "total": 67,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (11 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "Evaluation pipeline",
+            "RAG pipeline",
+            "Tool calling",
+            "Multi-agent system",
+            "Orchestration",
+            "Agentic system",
+            "AI/Agentic depth: 1 projects, 11 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Async programming: async",
+            "Database experience: redis",
+            "API development: rest api",
+            "Python projects: 1",
+            "Python/Backend: 1 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Frontend: next.js, react",
+            "Full-stack breadth (10 technologies)",
+            "Cloud/FullStack: 0 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Good engineering depth (5 signals)",
+            "Signals: schema, pipeline, pydantic, rate limiting, async",
+            "Engineering depth: 5 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Agent",
+        "Retrieval-Augmented",
+        "Python",
+        "python",
+        "Tool Calling",
+        "Langchain"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: retrieval-augmented, langchain, tool calling, rag, agent; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_12.pdf",
+      "candidate_name": "SHUBHANSHU NAVADIYA",
+      "eligible": true,
+      "rank": 15,
+      "total_score": 67,
+      "score_breakdown": {
+        "ai_project_depth": 38,
+        "python_backend": 21,
+        "cloud_fullstack": 5,
+        "github": 0,
+        "engineering_depth": 3,
+        "total": 67,
+        "evidence": {
+          "ai_project_depth": [
+            "3 AI projects found",
+            "Deep AI framework usage (24 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "RAG pipeline",
+            "Multi-agent system",
+            "AI/Agentic depth: 3 projects, 24 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Database experience: mysql, sqlite",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python projects: 2",
+            "Python/Backend: 1 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: github actions",
+            "Full-stack breadth (3 technologies)",
+            "Cloud/FullStack: 1 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Moderate engineering depth (3 signals)",
+            "Signals: pipeline, github actions, testing",
+            "Engineering depth: 3 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Agent",
+        "Python",
+        "python",
+        "Gpt",
+        "Agentic",
+        "Gemini",
+        "Ollama"
+      ],
+      "project_summary": "3 AI/ML project(s); Frameworks: ollama, gpt, agent, agentic, gemini; Python projects: 2; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "Multiple AI projects (3)",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_19.pdf",
+      "candidate_name": "P.V. Jayavardhana Sai",
+      "eligible": true,
+      "rank": 16,
+      "total_score": 67,
+      "score_breakdown": {
+        "ai_project_depth": 37,
+        "python_backend": 15,
+        "cloud_fullstack": 12,
+        "github": 0,
+        "engineering_depth": 3,
+        "total": 67,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (14 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "Evaluation pipeline",
+            "RAG pipeline",
+            "Orchestration",
+            "AI/Agentic depth: 2 projects, 14 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: flask",
+            "Database experience: mysql",
+            "Data processing: data pipeline",
+            "Python projects: 1",
+            "Python/Backend: 1 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, aws",
+            "Frontend: react",
+            "Containerization: docker",
+            "Full-stack breadth (3 technologies)",
+            "Cloud/FullStack: 2 cloud, 1 frontend"
+          ],
+          "engineering_depth": [
+            "Moderate engineering depth (3 signals)",
+            "Signals: docker, pipeline, logging",
+            "Engineering depth: 3 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Rag",
+        "Nlp",
+        "Computer Vision",
+        "Retrieval-Augmented",
+        "Python",
+        "python"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: tensorflow, nlp, retrieval-augmented, rag, computer vision; Python projects: 1; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_29.pdf",
+      "candidate_name": "VIKRAM MADHYASTA",
+      "eligible": true,
+      "rank": 17,
+      "total_score": 65,
+      "score_breakdown": {
+        "ai_project_depth": 34,
+        "python_backend": 15,
+        "cloud_fullstack": 11,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 65,
+        "evidence": {
+          "ai_project_depth": [
+            "5 AI projects found",
+            "Deep AI framework usage (4 frameworks)",
+            "RAG/retrieval implementation",
+            "Orchestration",
+            "Detailed AI project: Cloud",
+            "Detailed AI project: Integrated an OpenAI",
+            "AI/Agentic depth: 5 projects, 4 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Database experience: dynamodb",
+            "API development: rest api",
+            "Python projects: 3",
+            "Python/Backend: 0 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: ansible, jenkins, docker, github actions, terraform, ci/cd, aws, kubernetes",
+            "Containerization: docker, kubernetes",
+            "Cloud/FullStack: 8 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (8 signals)",
+            "Signals: concurrent, docker, pipeline, ci/cd, github actions",
+            "Engineering depth: 8 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Scikit-Learn",
+        "Openai",
+        "Python",
+        "python",
+        "Sklearn"
+      ],
+      "project_summary": "5 AI/ML project(s); Frameworks: sklearn, scikit-learn, openai, rag; Python projects: 3",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "Multiple AI projects (5)",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_44.pdf",
+      "candidate_name": "Vivek Chimnani",
+      "eligible": true,
+      "rank": 18,
+      "total_score": 64,
+      "score_breakdown": {
+        "ai_project_depth": 23,
+        "python_backend": 21,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 64,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (4 frameworks)",
+            "Agentic workflow implementation",
+            "Orchestration",
+            "AI/Agentic depth: 1 projects, 4 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Async programming: async",
+            "Database experience: postgresql, redis, mongodb",
+            "API development: rest api",
+            "Python projects: 1",
+            "Python/Backend: 1 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: ci/cd, docker, aws",
+            "Frontend: vue, vue.js, next.js, react",
+            "Containerization: docker",
+            "Full-stack breadth (12 technologies)",
+            "Cloud/FullStack: 3 cloud, 4 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (11 signals)",
+            "Signals: docker, schema, concurrency, pipeline, ci/cd",
+            "Engineering depth: 11 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Agent",
+        "Langgraph",
+        "Python",
+        "python",
+        "Prompt Engineering",
+        "Claude"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: agent, prompt engineering, langgraph, claude; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Solid AI project experience",
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "Vivekk-11",
+        "profile_url": "https://github.com/Vivekk-11",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_16.pdf",
+      "candidate_name": "PRIYANSHU KUMAR",
+      "eligible": true,
+      "rank": 19,
+      "total_score": 63,
+      "score_breakdown": {
+        "ai_project_depth": 34,
+        "python_backend": 19,
+        "cloud_fullstack": 6,
+        "github": 0,
+        "engineering_depth": 4,
+        "total": 63,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (12 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "Tool calling",
+            "Multi-agent system",
+            "Agentic system",
+            "AI/Agentic depth: 1 projects, 12 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Async programming: async",
+            "Database experience: postgresql, mysql, sqlite, mongodb",
+            "Python work experience: 1",
+            "Python/Backend: 1 frameworks, 4 databases"
+          ],
+          "cloud_fullstack": [
+            "Frontend: react.js, react",
+            "Full-stack breadth (9 technologies)",
+            "Cloud/FullStack: 0 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Good engineering depth (4 signals)",
+            "Signals: kafka, pipeline, validation, async",
+            "Engineering depth: 4 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Embedding",
+        "Python",
+        "python",
+        "Crewai",
+        "Tool Calling",
+        "Langchain"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: langchain, tool calling, rag, embedding, crewai; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_40.pdf",
+      "candidate_name": "RAJ THUMAR",
+      "eligible": true,
+      "rank": 20,
+      "total_score": 62,
+      "score_breakdown": {
+        "ai_project_depth": 23,
+        "python_backend": 19,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 62,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Multiple AI frameworks used (3)",
+            "RAG/retrieval implementation",
+            "Orchestration",
+            "Detailed AI project: AI Workflow Orchestration Engine(NestJS, Apache Kafka, PostgreSQL, Redis, OpenAI",
+            "AI/Agentic depth: 1 projects, 3 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: flask",
+            "Async programming: async",
+            "Database experience: postgresql, mysql, redis, mongodb",
+            "API development: rest api",
+            "Python/Backend: 1 frameworks, 4 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, github actions, aws",
+            "Frontend: react.js, reactjs, react",
+            "Containerization: docker",
+            "Full-stack breadth (13 technologies)",
+            "Cloud/FullStack: 3 cloud, 3 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (10 signals)",
+            "Signals: kafka, docker, webhook, pipeline, caching",
+            "Engineering depth: 10 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Openai",
+        "Python",
+        "python",
+        "Gemini"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: gemini, openai, rag; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Solid AI project experience",
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_09.pdf",
+      "candidate_name": "KRISHAN KANT",
+      "eligible": true,
+      "rank": 21,
+      "total_score": 57,
+      "score_breakdown": {
+        "ai_project_depth": 28,
+        "python_backend": 15,
+        "cloud_fullstack": 9,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 57,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (4 frameworks)",
+            "RAG/retrieval implementation",
+            "Vector search/store",
+            "Detailed AI project: AI",
+            "AI/Agentic depth: 2 projects, 4 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Async programming: async",
+            "Database experience: postgresql, redis, mongodb",
+            "API development: rest api",
+            "Python/Backend: 0 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker",
+            "Frontend: react",
+            "Containerization: docker",
+            "Full-stack breadth (6 technologies)",
+            "Cloud/FullStack: 1 cloud, 1 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (15 signals)",
+            "Signals: kafka, docker, schema, concurrency, microservices",
+            "Engineering depth: 15 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Vector Search",
+        "Openai",
+        "Python",
+        "python",
+        "Langchain"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: vector search, openai, langchain, rag; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Solid AI project experience",
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "Strong engineering practices",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_06.pdf",
+      "candidate_name": "M SAI KUSHITH",
+      "eligible": true,
+      "rank": 22,
+      "total_score": 55,
+      "score_breakdown": {
+        "ai_project_depth": 28,
+        "python_backend": 21,
+        "cloud_fullstack": 4,
+        "github": 0,
+        "engineering_depth": 2,
+        "total": 55,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (7 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "AI/Agentic depth: 2 projects, 7 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, django",
+            "Database experience: postgresql",
+            "API development: rest api",
+            "Python projects: 2",
+            "Python/Backend: 2 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Frontend: react",
+            "Full-stack breadth (5 technologies)",
+            "Cloud/FullStack: 0 cloud, 1 frontend"
+          ],
+          "engineering_depth": [
+            "Basic engineering depth (1 signals)",
+            "Signals: pipeline",
+            "Engineering depth: 1 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Nlp",
+        "Langgraph",
+        "Python",
+        "python",
+        "Langchain",
+        "Prompt Engineering"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: nlp, langchain, rag, prompt engineering, langgraph; Python projects: 2; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Solid AI project experience",
+        "Good Python backend skills",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited cloud/full-stack evidence"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_23.pdf",
+      "candidate_name": "ANNISHA S",
+      "eligible": true,
+      "rank": 23,
+      "total_score": 53,
+      "score_breakdown": {
+        "ai_project_depth": 23,
+        "python_backend": 21,
+        "cloud_fullstack": 9,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 53,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Multiple AI frameworks used (2)",
+            "Agentic workflow implementation",
+            "Detailed AI project: Code4X",
+            "AI/Agentic depth: 2 projects, 2 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Database experience: postgresql, mongodb",
+            "API development: rest api",
+            "Data processing: etl",
+            "Python projects: 2",
+            "Python/Backend: 1 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: azure",
+            "Frontend: react.js, react",
+            "Full-stack breadth (6 technologies)",
+            "Cloud/FullStack: 1 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Limited engineering depth signals",
+            "Engineering depth: 0 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Langgraph",
+        "Openai",
+        "Python",
+        "python"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: langgraph, openai; Python projects: 1",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Solid AI project experience",
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited engineering depth signals"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "annishasaravan",
+        "profile_url": "https://github.com/annishasaravan",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_30.pdf",
+      "candidate_name": "V Sree Raghu Vardhan",
+      "eligible": true,
+      "rank": 24,
+      "total_score": 52,
+      "score_breakdown": {
+        "ai_project_depth": 5,
+        "python_backend": 27,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 52,
+        "evidence": {
+          "ai_project_depth": [
+            "AI frameworks mentioned but no concrete AI projects",
+            "Minimal AI project evidence"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, django",
+            "Async programming: async",
+            "Database experience: postgresql, redis, mongodb",
+            "API development: rest api",
+            "Data processing: etl",
+            "Python work experience: 1",
+            "Python/Backend: 2 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: jenkins, docker, ci/cd, azure, aws, kubernetes",
+            "Frontend: react",
+            "Containerization: docker, kubernetes",
+            "Full-stack breadth (8 technologies)",
+            "Cloud/FullStack: 6 cloud, 1 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (15 signals)",
+            "Signals: concurrent, retry, docker, pipeline, caching",
+            "Engineering depth: 15 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Vector Search",
+        "Retrieval-Augmented",
+        "Python",
+        "python",
+        "Evaluation Pipeline",
+        "Langchain"
+      ],
+      "project_summary": "Frameworks: retrieval-augmented, langchain, rag, evaluation pipeline, vector search; 2 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited AI project depth"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_05.pdf",
+      "candidate_name": "VISHWAS BADIGER",
+      "eligible": true,
+      "rank": 25,
+      "total_score": 49,
+      "score_breakdown": {
+        "ai_project_depth": 23,
+        "python_backend": 17,
+        "cloud_fullstack": 6,
+        "github": 0,
+        "engineering_depth": 3,
+        "total": 49,
+        "evidence": {
+          "ai_project_depth": [
+            "2 AI projects found",
+            "Deep AI framework usage (4 frameworks)",
+            "RAG/retrieval implementation",
+            "AI/Agentic depth: 2 projects, 4 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: flask",
+            "Database experience: mysql, mongodb",
+            "API development: rest api",
+            "Python projects: 1",
+            "Python/Backend: 1 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Frontend: react.js, react",
+            "Full-stack breadth (10 technologies)",
+            "Cloud/FullStack: 0 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Moderate engineering depth (2 signals)",
+            "Signals: schema, pipeline",
+            "Engineering depth: 2 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Scikit-Learn",
+        "Python",
+        "python",
+        "Gemini",
+        "Machine Learning"
+      ],
+      "project_summary": "2 AI/ML project(s); Frameworks: gemini, machine learning, scikit-learn, rag; Python projects: 1; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Solid AI project experience",
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_24.pdf",
+      "candidate_name": "DORNIPADU KARTHIKA CHAITRIKA",
+      "eligible": true,
+      "rank": 26,
+      "total_score": 49,
+      "score_breakdown": {
+        "ai_project_depth": 34,
+        "python_backend": 15,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 49,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (10 frameworks)",
+            "RAG/retrieval implementation",
+            "Agentic workflow implementation",
+            "Evaluation pipeline",
+            "RAG pipeline",
+            "Vector search/store",
+            "AI/Agentic depth: 1 projects, 10 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: flask, django",
+            "Python projects: 1",
+            "Python/Backend: 2 frameworks, 0 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/FullStack: 0 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Limited engineering depth signals",
+            "Engineering depth: 0 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Nlp",
+        "Retrieval-Augmented",
+        "Python",
+        "python",
+        "Embedding",
+        "Prompt Engineering"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: retrieval-augmented, nlp, rag, embedding, prompt engineering",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Strong AI/Agentic project depth",
+        "Good Python backend skills",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited cloud/full-stack evidence",
+        "Limited engineering depth signals"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "KarthikaDornipadu",
+        "profile_url": "https://github.com/KarthikaDornipadu",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_04.pdf",
+      "candidate_name": "Yuvaraj R",
+      "eligible": true,
+      "rank": 27,
+      "total_score": 48,
+      "score_breakdown": {
+        "ai_project_depth": 15,
+        "python_backend": 19,
+        "cloud_fullstack": 10,
+        "github": 0,
+        "engineering_depth": 4,
+        "total": 48,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (5 frameworks)",
+            "AI/Agentic depth: 1 projects, 5 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: django",
+            "Database experience: postgresql",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python projects: 1",
+            "Python work experience: 1",
+            "Python/Backend: 1 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: jenkins, docker",
+            "Containerization: docker",
+            "Full-stack breadth (3 technologies)",
+            "Cloud/FullStack: 2 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Good engineering depth (4 signals)",
+            "Signals: docker, pipeline, jenkins, monitoring",
+            "Engineering depth: 4 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Scikit-Learn",
+        "Python",
+        "python",
+        "Deep Learning",
+        "Neural Network",
+        "Machine Learning",
+        "Image Classification"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: image classification, neural network, deep learning, machine learning, scikit-learn; Python projects: 1; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_45.pdf",
+      "candidate_name": "Parshuram Kumar",
+      "eligible": true,
+      "rank": 28,
+      "total_score": 48,
+      "score_breakdown": {
+        "ai_project_depth": 5,
+        "python_backend": 23,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 48,
+        "evidence": {
+          "ai_project_depth": [
+            "AI frameworks mentioned but no concrete AI projects",
+            "Minimal AI project evidence"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: flask, django",
+            "Async programming: async",
+            "Database experience: mysql, redis, mongodb",
+            "API development: rest api",
+            "Python/Backend: 2 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, github actions, ci/cd, azure, aws",
+            "Frontend: react.js, react",
+            "Containerization: docker",
+            "Full-stack breadth (15 technologies)",
+            "Cloud/FullStack: 5 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (7 signals)",
+            "Signals: kafka, docker, joi, caching, ci/cd",
+            "Engineering depth: 7 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Python",
+        "python",
+        "Claude",
+        "Machine Learning"
+      ],
+      "project_summary": "Frameworks: machine learning, rag, claude",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Strong Python/Backend engineering",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [
+        "Limited AI project depth"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_25.pdf",
+      "candidate_name": "Atul Kumar",
+      "eligible": true,
+      "rank": 29,
+      "total_score": 47,
+      "score_breakdown": {
+        "ai_project_depth": 20,
+        "python_backend": 17,
+        "cloud_fullstack": 8,
+        "github": 0,
+        "engineering_depth": 2,
+        "total": 47,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (5 frameworks)",
+            "RAG/retrieval implementation",
+            "AI/Agentic depth: 1 projects, 5 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: flask",
+            "Database experience: mysql",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python projects: 1",
+            "Python/Backend: 1 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: gcp, google cloud",
+            "Full-stack breadth (5 technologies)",
+            "Cloud/FullStack: 2 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Basic engineering depth (1 signals)",
+            "Signals: pipeline",
+            "Engineering depth: 1 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Nlp",
+        "Scikit-Learn",
+        "Python",
+        "python",
+        "Gemini",
+        "Machine Learning"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: nlp, rag, gemini, machine learning, scikit-learn; Python projects: 1; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Solid AI project experience",
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_43.pdf",
+      "candidate_name": "ARUNIMA SAHA",
+      "eligible": true,
+      "rank": 30,
+      "total_score": 44,
+      "score_breakdown": {
+        "ai_project_depth": 5,
+        "python_backend": 21,
+        "cloud_fullstack": 13,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 44,
+        "evidence": {
+          "ai_project_depth": [
+            "AI frameworks mentioned but no concrete AI projects",
+            "Minimal AI project evidence"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Database experience: postgresql, mysql",
+            "API development: rest api",
+            "Data processing: etl",
+            "Python work experience: 2",
+            "Python/Backend: 1 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, google cloud, aws",
+            "Containerization: docker",
+            "Full-stack breadth (5 technologies)",
+            "Cloud/FullStack: 3 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (11 signals)",
+            "Signals: docker, schema, microservices, observability, pipeline",
+            "Engineering depth: 11 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Agent",
+        "Python",
+        "python",
+        "Gpt",
+        "Function Calling",
+        "Agentic",
+        "Pinecone"
+      ],
+      "project_summary": "Frameworks: pinecone, gpt, agent, function calling, agentic; 3 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited AI project depth"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_49.pdf",
+      "candidate_name": "Aswin Raj R",
+      "eligible": true,
+      "rank": 31,
+      "total_score": 44,
+      "score_breakdown": {
+        "ai_project_depth": 20,
+        "python_backend": 15,
+        "cloud_fullstack": 9,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 44,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Deep AI framework usage (4 frameworks)",
+            "RAG/retrieval implementation",
+            "AI/Agentic depth: 1 projects, 4 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Database experience: mysql, mongodb",
+            "API development: rest api",
+            "Python projects: 1",
+            "Python work experience: 1",
+            "Python/Backend: 0 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: aws",
+            "Frontend: react.js, react",
+            "Full-stack breadth (11 technologies)",
+            "Cloud/FullStack: 1 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Limited engineering depth signals",
+            "Engineering depth: 0 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Rag",
+        "Openai",
+        "Python",
+        "python",
+        "Langchain"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: openai, tensorflow, langchain, rag; Python projects: 1; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Solid AI project experience",
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [
+        "Limited engineering depth signals"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_27.pdf",
+      "candidate_name": "Gayathri Palraj",
+      "eligible": true,
+      "rank": 32,
+      "total_score": 42,
+      "score_breakdown": {
+        "ai_project_depth": 17,
+        "python_backend": 11,
+        "cloud_fullstack": 9,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 42,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Single AI framework used",
+            "RAG/retrieval implementation",
+            "State management",
+            "AI/Agentic depth: 1 projects, 1 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Database experience: mysql, mongodb",
+            "API development: rest api",
+            "Python/Backend: 0 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: ci/cd",
+            "Frontend: react.js, react",
+            "Full-stack breadth (12 technologies)",
+            "Cloud/FullStack: 1 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (6 signals)",
+            "Signals: schema, pipeline, ci/cd, validation, testing",
+            "Engineering depth: 6 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Python",
+        "python"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: rag; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Cloud/DevOps experience",
+        "Strong engineering practices",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [
+        "Limited Python/backend evidence"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_36.pdf",
+      "candidate_name": "Saif Ali Nagori",
+      "eligible": true,
+      "rank": 33,
+      "total_score": 42,
+      "score_breakdown": {
+        "ai_project_depth": 17,
+        "python_backend": 19,
+        "cloud_fullstack": 6,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 42,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Multiple AI frameworks used (2)",
+            "RAG/retrieval implementation",
+            "AI/Agentic depth: 1 projects, 2 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, flask",
+            "Database experience: sqlite, mongodb",
+            "Python projects: 1",
+            "Python/Backend: 2 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Frontend: react.js, react",
+            "Full-stack breadth (11 technologies)",
+            "Cloud/FullStack: 0 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Limited engineering depth signals",
+            "Engineering depth: 0 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Python",
+        "python",
+        "Machine Learning"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: machine learning, rag; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [
+        "Limited engineering depth signals"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "Nagorisaifali",
+        "profile_url": "https://github.com/Nagorisaifali",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_37.pdf",
+      "candidate_name": "Aditi Kala",
+      "eligible": true,
+      "rank": 34,
+      "total_score": 42,
+      "score_breakdown": {
+        "ai_project_depth": 5,
+        "python_backend": 19,
+        "cloud_fullstack": 14,
+        "github": 0,
+        "engineering_depth": 4,
+        "total": 42,
+        "evidence": {
+          "ai_project_depth": [
+            "AI frameworks mentioned but no concrete AI projects",
+            "Minimal AI project evidence"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi, flask",
+            "Database experience: postgresql, mongodb, postgres",
+            "Python/Backend: 2 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker, google cloud",
+            "Frontend: react.js, nextjs, react",
+            "Containerization: docker",
+            "Full-stack breadth (12 technologies)",
+            "Cloud/FullStack: 2 cloud, 3 frontend"
+          ],
+          "engineering_depth": [
+            "Good engineering depth (5 signals)",
+            "Signals: concurrent, docker, pipeline, validation, testing",
+            "Engineering depth: 5 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Rag",
+        "Agent",
+        "Computer Vision",
+        "Python",
+        "python",
+        "Pytorch"
+      ],
+      "project_summary": "Frameworks: tensorflow, rag, computer vision, pytorch, agent; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited AI project depth"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "why-aditi",
+        "profile_url": "https://github.com/why-aditi",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_34.pdf",
+      "candidate_name": "NISARGA H. S.",
+      "eligible": true,
+      "rank": 35,
+      "total_score": 41,
+      "score_breakdown": {
+        "ai_project_depth": 17,
+        "python_backend": 11,
+        "cloud_fullstack": 8,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 41,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Multiple AI frameworks used (3)",
+            "RAG/retrieval implementation",
+            "AI/Agentic depth: 1 projects, 3 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Database experience: mysql",
+            "API development: rest api",
+            "Python projects: 1",
+            "Python/Backend: 0 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: jenkins, ci/cd",
+            "Full-stack breadth (4 technologies)",
+            "Cloud/FullStack: 2 cloud, 0 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (6 signals)",
+            "Signals: microservices, pipeline, ci/cd, validation, microservice",
+            "Engineering depth: 6 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Python",
+        "python",
+        "Neural Network",
+        "Claude"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: neural network, rag, claude; Python projects: 1; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Cloud/DevOps experience",
+        "Strong engineering practices",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [
+        "Limited Python/backend evidence"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_10.pdf",
+      "candidate_name": "ABHINAV MISHRA",
+      "eligible": true,
+      "rank": 36,
+      "total_score": 40,
+      "score_breakdown": {
+        "ai_project_depth": 5,
+        "python_backend": 15,
+        "cloud_fullstack": 15,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 40,
+        "evidence": {
+          "ai_project_depth": [
+            "AI frameworks mentioned but no concrete AI projects",
+            "Minimal AI project evidence"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Database experience: postgresql, sqlite, redis",
+            "Python/Backend: 1 frameworks, 3 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: ci/cd, github actions, azure",
+            "Frontend: next.js, react",
+            "Full-stack breadth (6 technologies)",
+            "Cloud/FullStack: 3 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (12 signals)",
+            "Signals: retry, sentry, observability, webhook, pipeline",
+            "Engineering depth: 12 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Agent",
+        "Langgraph",
+        "Openai",
+        "Python",
+        "python",
+        "Agentic"
+      ],
+      "project_summary": "Frameworks: rag, openai, agent, langgraph, agentic; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited AI project depth"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "AbhinavMishra32",
+        "profile_url": "https://github.com/AbhinavMishra32",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_03.pdf",
+      "candidate_name": "Agam Jain",
+      "eligible": true,
+      "rank": 37,
+      "total_score": 37,
+      "score_breakdown": {
+        "ai_project_depth": 5,
+        "python_backend": 17,
+        "cloud_fullstack": 11,
+        "github": 0,
+        "engineering_depth": 4,
+        "total": 37,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "AI/Agentic depth: 1 projects, 0 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: fastapi",
+            "Database experience: postgresql, supabase, redis, mongodb",
+            "API development: rest api",
+            "Python/Backend: 1 frameworks, 4 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: docker",
+            "Frontend: react.js, next.js, react",
+            "Containerization: docker",
+            "Full-stack breadth (16 technologies)",
+            "Cloud/FullStack: 1 cloud, 3 frontend"
+          ],
+          "engineering_depth": [
+            "Good engineering depth (4 signals)",
+            "Signals: docker, pipeline, caching, validation",
+            "Engineering depth: 4 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Python",
+        "python"
+      ],
+      "project_summary": "1 AI/ML project(s); 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Good Python backend skills",
+        "Strong cloud/full-stack capabilities",
+        "Strong engineering practices"
+      ],
+      "concerns": [
+        "Limited AI project depth"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_14.pdf",
+      "candidate_name": "JAYA NANDI",
+      "eligible": true,
+      "rank": 38,
+      "total_score": 33,
+      "score_breakdown": {
+        "ai_project_depth": 9,
+        "python_backend": 15,
+        "cloud_fullstack": 9,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 33,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Multiple AI frameworks used (2)",
+            "RAG/retrieval implementation",
+            "Penalty: AI project appears shallow - limited depth signals",
+            "AI/Agentic depth: 1 projects, 2 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Database experience: mysql",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python projects: 1",
+            "Python work experience: 1",
+            "Python/Backend: 0 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: aws",
+            "Frontend: react.js, react",
+            "Full-stack breadth (5 technologies)",
+            "Cloud/FullStack: 1 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Limited engineering depth signals",
+            "Engineering depth: 0 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": [
+          "AI project appears shallow - limited depth signals"
+        ]
+      },
+      "matched_skills": [
+        "Rag",
+        "Python",
+        "python",
+        "Machine Learning"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: machine learning, rag; Python projects: 1; 1 work experience(s)",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [
+        "Limited AI project depth",
+        "Limited engineering depth signals",
+        "AI project appears shallow - limited depth signals"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_39.pdf",
+      "candidate_name": "Vivek Shekhawat",
+      "eligible": true,
+      "rank": 39,
+      "total_score": 33,
+      "score_breakdown": {
+        "ai_project_depth": 5,
+        "python_backend": 17,
+        "cloud_fullstack": 6,
+        "github": 0,
+        "engineering_depth": 5,
+        "total": 33,
+        "evidence": {
+          "ai_project_depth": [
+            "AI frameworks mentioned but no concrete AI projects",
+            "Minimal AI project evidence"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: django",
+            "Async programming: async",
+            "Database experience: postgresql, mysql",
+            "API development: rest api",
+            "Python/Backend: 1 frameworks, 2 databases"
+          ],
+          "cloud_fullstack": [
+            "Frontend: react.js, next.js, react",
+            "Full-stack breadth (10 technologies)",
+            "Cloud/FullStack: 0 cloud, 3 frontend"
+          ],
+          "engineering_depth": [
+            "Strong engineering depth (7 signals)",
+            "Signals: concurrent, concurrency, pipeline, validation, rate limiting",
+            "Engineering depth: 7 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Vector Search",
+        "Embedding",
+        "Python",
+        "python",
+        "Langchain",
+        "Ollama"
+      ],
+      "project_summary": "Frameworks: langchain, embedding, rag, vector search, ollama; 1 work experience(s)",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Good Python backend skills",
+        "Cloud/DevOps experience",
+        "Strong engineering practices",
+        "RAG/Retrieval experience",
+        "Agentic workflow experience"
+      ],
+      "concerns": [
+        "Limited AI project depth"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "Vivek1592002",
+        "profile_url": "https://github.com/Vivek1592002",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_48.pdf",
+      "candidate_name": "NIDHI KM",
+      "eligible": true,
+      "rank": 40,
+      "total_score": 33,
+      "score_breakdown": {
+        "ai_project_depth": 9,
+        "python_backend": 11,
+        "cloud_fullstack": 9,
+        "github": 0,
+        "engineering_depth": 4,
+        "total": 33,
+        "evidence": {
+          "ai_project_depth": [
+            "1 AI project found",
+            "Single AI framework used",
+            "AI/Agentic depth: 1 projects, 1 frameworks"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Database experience: mysql",
+            "API development: rest api",
+            "Data processing: etl",
+            "Python/Backend: 0 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Cloud/DevOps: aws",
+            "Frontend: react.js, react",
+            "Full-stack breadth (6 technologies)",
+            "Cloud/FullStack: 1 cloud, 2 frontend"
+          ],
+          "engineering_depth": [
+            "Good engineering depth (4 signals)",
+            "Signals: pipeline, joi, validation, exception handling",
+            "Engineering depth: 4 signals found"
+          ],
+          "github": [
+            "Recent activity: 0/5"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Python",
+        "python"
+      ],
+      "project_summary": "1 AI/ML project(s); Frameworks: tensorflow",
+      "github_summary": "Recent activity: 0/5",
+      "strengths": [
+        "Cloud/DevOps experience",
+        "Strong engineering practices"
+      ],
+      "concerns": [
+        "Limited AI project depth",
+        "Limited Python/backend evidence"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": true,
+        "username": "Nidhi-km",
+        "profile_url": "https://github.com/Nidhi-km",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "Recent activity: 0/5",
+        "recent_repos": [
+          "No public repositories found"
+        ],
+        "recent_activity": [
+          "No recent public activity found"
+        ],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_21.pdf",
+      "candidate_name": "Software Engineering Job Simulation",
+      "eligible": true,
+      "rank": 41,
+      "total_score": 26,
+      "score_breakdown": {
+        "ai_project_depth": 5,
+        "python_backend": 15,
+        "cloud_fullstack": 4,
+        "github": 0,
+        "engineering_depth": 2,
+        "total": 26,
+        "evidence": {
+          "ai_project_depth": [
+            "AI frameworks mentioned but no concrete AI projects",
+            "Minimal AI project evidence"
+          ],
+          "python_backend": [
+            "Python confirmed as skill/language",
+            "Python backend frameworks: flask",
+            "Database experience: mysql",
+            "API development: rest api",
+            "Data processing: pandas",
+            "Python/Backend: 1 frameworks, 1 databases"
+          ],
+          "cloud_fullstack": [
+            "Frontend: react",
+            "Full-stack breadth (4 technologies)",
+            "Cloud/FullStack: 0 cloud, 1 frontend"
+          ],
+          "engineering_depth": [
+            "Basic engineering depth (1 signals)",
+            "Signals: testing",
+            "Engineering depth: 1 signals found"
+          ],
+          "github": [
+            "No GitHub URL found in resume"
+          ]
+        },
+        "penalties": []
+      },
+      "matched_skills": [
+        "Tensorflow",
+        "Rag",
+        "Python",
+        "python",
+        "Image Classification",
+        "Pytorch",
+        "Hugging Face"
+      ],
+      "project_summary": "Frameworks: tensorflow, rag, hugging face, image classification, pytorch",
+      "github_summary": "No GitHub URL found in resume",
+      "strengths": [
+        "Good Python backend skills",
+        "RAG/Retrieval experience"
+      ],
+      "concerns": [
+        "Limited AI project depth",
+        "Limited cloud/full-stack evidence"
+      ],
+      "rejection_reasons": [],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "No GitHub URL found in resume",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "filename": "candidate_01.pdf",
+      "candidate_name": "Kartikay Sinha",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag"
+      ],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No evidence of Python as a genuine skill, project technology, or implementation language"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_02.pdf",
+      "candidate_name": "SHIVAM RAJ",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag"
+      ],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No evidence of Python as a genuine skill, project technology, or implementation language"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_11.pdf",
+      "candidate_name": "MD AZIZUL ISLAM",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Vector Database",
+        "Embedding",
+        "Retrieval-Augmented",
+        "Openai"
+      ],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No evidence of Python as a genuine skill, project technology, or implementation language"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_18.pdf",
+      "candidate_name": "Harshit Kumar Mishra",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag"
+      ],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No evidence of Python as a genuine skill, project technology, or implementation language"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_20.pdf",
+      "candidate_name": "PRIYA R",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [
+        "Python",
+        "python"
+      ],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No meaningful AI/LLM/RAG/agentic project evidence found"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_31.pdf",
+      "candidate_name": "Shreya Chauhan",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [
+        "Python",
+        "python"
+      ],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No meaningful AI/LLM/RAG/agentic project evidence found"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_32.pdf",
+      "candidate_name": "Mukul Pal",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag",
+        "Openai",
+        "Conversational Ai"
+      ],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No evidence of Python as a genuine skill, project technology, or implementation language"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_42.pdf",
+      "candidate_name": "ANJALI PATIL",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No evidence of Python as a genuine skill, project technology, or implementation language"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    },
+    {
+      "filename": "candidate_46.pdf",
+      "candidate_name": "AABHAR GUPTA",
+      "eligible": false,
+      "rank": null,
+      "total_score": 0,
+      "score_breakdown": {
+        "ai_project_depth": 0,
+        "python_backend": 0,
+        "cloud_fullstack": 0,
+        "github": 0,
+        "engineering_depth": 0,
+        "total": 0,
+        "evidence": {},
+        "penalties": []
+      },
+      "matched_skills": [
+        "Rag"
+      ],
+      "project_summary": "",
+      "github_summary": "",
+      "strengths": [],
+      "concerns": [],
+      "rejection_reasons": [
+        "No evidence of Python as a genuine skill, project technology, or implementation language"
+      ],
+      "github_enrichment": {
+        "has_github": false,
+        "username": "",
+        "profile_url": "",
+        "recent_activity_score": 0,
+        "repos_score": 0,
+        "total_score": 0,
+        "summary": "",
+        "recent_repos": [],
+        "recent_activity": [],
+        "error": ""
+      },
+      "parsing_error": "",
+      "llm_error": ""
+    }
+  ],
+  "failed_candidates": []
+}
