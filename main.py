@@ -85,7 +85,20 @@ def cmd_serve(args):
     uvicorn.run("src.api:app", host="0.0.0.0", port=args.port, reload=args.reload)
 
 
+def is_legacy_syntax():
+    """Check if user passed --input or --output without a subcommand."""
+    args = sys.argv[1:]
+    return len(args) > 0 and not args[0] in ("screen", "report", "serve", "-h", "--help") and any(
+        a.startswith("--input") or a.startswith("-i") or a.startswith("--output") or a.startswith("-o")
+        for a in args
+    )
+
+
 def main():
+    # Legacy support: if --input/--output passed without subcommand, treat as 'screen'
+    if is_legacy_syntax():
+        sys.argv.insert(1, "screen")
+
     parser = argparse.ArgumentParser(
         description="AI Resume Screening & Ranking System",
     )
