@@ -21,8 +21,10 @@ app.add_middleware(
 )
 
 PROJECT_ROOT = Path(__file__).parent.parent
-STATIC_DIR = PROJECT_ROOT / "static"
-FRONTEND_DIST = PROJECT_ROOT / "frontend" / "dist"
+BACKEND_ROOT = PROJECT_ROOT
+REPO_ROOT = PROJECT_ROOT.parent
+STATIC_DIR = BACKEND_ROOT / "static"
+FRONTEND_DIST = REPO_ROOT / "frontend" / "dist"
 
 
 class ScreenRequest(BaseModel):

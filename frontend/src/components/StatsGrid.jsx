@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react'
-import './StatsGrid.css'
 
 function AnimNum({ target }) {
   const ref = useRef(null)
@@ -14,22 +13,25 @@ function AnimNum({ target }) {
     }
     requestAnimationFrame(tick)
   }, [target])
-  return <span ref={ref} className="stat-val">0</span>
+  return <span ref={ref} className="text-2xl font-bold text-zinc-900 tabular-nums">0</span>
 }
 
 export default function StatsGrid({ summary }) {
   const items = [
-    { label: 'Total', value: summary.total_resumes, cls: 'total' },
-    { label: 'Eligible', value: summary.eligible, cls: 'eligible' },
-    { label: 'Rejected', value: summary.rejected, cls: 'rejected' },
-    { label: 'Failed', value: summary.failed, cls: 'failed' },
+    { label: 'Total', value: summary.total_resumes, color: 'bg-zinc-900' },
+    { label: 'Eligible', value: summary.eligible, color: 'bg-emerald-500' },
+    { label: 'Rejected', value: summary.rejected, color: 'bg-red-500' },
+    { label: 'Failed', value: summary.failed, color: 'bg-zinc-400' },
   ]
 
   return (
-    <div className="stats-grid">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
       {items.map(i => (
-        <div key={i.cls} className={`stat-card ${i.cls}`}>
-          <span className="stat-label">{i.label}</span>
+        <div key={i.label} className="bg-white border border-zinc-200 rounded-xl p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className={`w-2 h-2 rounded-full ${i.color}`} />
+            <span className="text-xs text-zinc-500 font-medium">{i.label}</span>
+          </div>
           <AnimNum target={i.value} />
         </div>
       ))}

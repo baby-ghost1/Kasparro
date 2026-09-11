@@ -4,7 +4,6 @@ import Hero from './components/Hero'
 import Dashboard from './components/Dashboard'
 import Toast from './components/Toast'
 import { getResults } from './api'
-import './App.css'
 
 export default function App() {
   const [data, setData] = useState(null)
@@ -22,15 +21,19 @@ export default function App() {
   }, [])
 
   return (
-    <div className="app">
+    <div className="min-h-screen flex flex-col bg-[#fafafa]">
       <Navbar />
-      {!data ? (
-        <Hero onData={setData} showToast={showToast} />
-      ) : (
-        <Dashboard data={data} onRescan={() => setData(null)} />
-      )}
+      <main className="flex-1">
+        {!data ? (
+          <Hero onData={setData} showToast={showToast} />
+        ) : (
+          <Dashboard data={data} onRescan={() => setData(null)} />
+        )}
+      </main>
       <Toast {...toast} />
-      <footer className="footer">ResumeAI — AI Resume Screening & Ranking System</footer>
+      <footer className="text-center py-6 text-xs text-zinc-400 border-t border-zinc-200">
+        ResumeAI — AI Resume Screening & Ranking System
+      </footer>
     </div>
   )
 }

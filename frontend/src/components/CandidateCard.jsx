@@ -1,20 +1,19 @@
 import { useState } from 'react'
-import './CandidateCard.css'
 
 const rankStyle = (rank) => {
-  if (rank === 1) return { background: 'linear-gradient(135deg,#fbbf24,#f59e0b)', color: '#000' }
-  if (rank === 2) return { background: 'linear-gradient(135deg,#94a3b8,#64748b)', color: '#000' }
-  if (rank === 3) return { background: 'linear-gradient(135deg,#cd7c2f,#a0522d)', color: '#fff' }
-  return { background: 'var(--card)', color: 'var(--text2)', border: '1px solid var(--border)' }
+  if (rank === 1) return 'bg-zinc-900 text-white'
+  if (rank === 2) return 'bg-zinc-600 text-white'
+  if (rank === 3) return 'bg-zinc-400 text-white'
+  return 'bg-zinc-100 text-zinc-500'
 }
 
-const scoreBar = (label, value, max, gradient) => (
-  <div className="sc-row">
-    <span className="sc-label">{label}</span>
-    <div className="sc-track">
-      <div className="sc-fill" style={{ width: `${(value / max) * 100}%`, background: gradient }} />
+const ScoreBar = ({ label, value, max, barClass }) => (
+  <div className="flex items-center gap-2">
+    <span className="text-[10px] text-zinc-400 w-8 text-right">{label}</span>
+    <div className="flex-1 h-1.5 bg-zinc-100 rounded-full overflow-hidden">
+      <div className={`h-full rounded-full ${barClass}`} style={{ width: `${(value / max) * 100}%` }} />
     </div>
-    <span className="sc-val">{value}/{max}</span>
+    <span className="text-[10px] text-zinc-400 w-8 tabular-nums">{value}/{max}</span>
   </div>
 )
 
@@ -24,56 +23,73 @@ export default function CandidateCard({ candidate: c }) {
   const skills = (c.matched_skills || []).slice(0, 8)
 
   return (
-    <div className={`card ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
-      <div className="card-top">
-        <div className="card-left">
-          <div className="rank" style={rankStyle(c.rank)}>#{c.rank}</div>
+    <div
+      className={`bg-white border border-zinc-200 rounded-xl overflow-hidden transition-all hover:border-zinc-300 ${open ? 'shadow-sm' : ''}`}
+    >
+      <div
+        className="flex items-center justify-between p-4 cursor-pointer select-none"
+        onClick={() => setOpen(!open)}
+      >
+        <div className="flex items-center gap-3">
+          <span className={`w-8 h-8 rounded-lg text-xs font-bold flex items-center justify-center ${rankStyle(c.rank)}`}>
+            #{c.rank}
+          </span>
           <div>
-            <div className="name">{c.candidate_name}</div>
-            <div className="email">{c.email || ''}</div>
+            <div className="text-sm font-semibold text-zinc-900">{c.candidate_name}</div>
+            <div className="text-[11px] text-zinc-400">{c.email || ''}</div>
           </div>
         </div>
-        <div className="card-right">
-          <div className="score">{c.total_score}</div>
-          <span className="arrow">{open ? '▲' : '▼'}</span>
+        <div className="flex items-center gap-3">
+          <span className="text-lg font-bold text-zinc-900 tabular-nums">{c.total_score}</span>
+          <svg className={`w-4 h-4 text-zinc-400 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
         </div>
       </div>
 
-      <div className="score-bars">
-        {scoreBar('AI', sb.ai_project_depth, 40, 'linear-gradient(90deg,var(--accent),var(--pink))')}
-        {scoreBar('Py', sb.python_backend, 30, 'linear-gradient(90deg,var(--green),var(--cyan))')}
-        {scoreBar('Cloud', sb.cloud_fullstack, 15, 'linear-gradient(90deg,var(--amber),var(--red))')}
-        {scoreBar('GH', sb.github, 10, 'linear-gradient(90deg,#a855f7,#ec4899)')}
-        {scoreBar('Eng', sb.engineering_depth, 5, 'linear-gradient(90deg,var(--cyan),var(--accent))')}
+      <div className="px-4 pb-3 flex flex-col gap-1.5">
+        <ScoreBar label="AI" value={sb.ai_project_depth} max={40} barClass="bg-zinc-900" />
+        <ScoreBar label="Py" value={sb.python_backend} max={30} barClass="bg-zinc-700" />
+        <ScoreBar label="Cloud" value={sb.cloud_fullstack} max={15} barClass="bg-zinc-500" />
+        <ScoreBar label="GH" value={sb.github} max={10} barClass="bg-zinc-400" />
+        <ScoreBar label="Eng" value={sb.engineering_depth} max={5} barClass="bg-zinc-300" />
       </div>
 
       {skills.length > 0 && (
-        <div className="skills">
-          {skills.map(s => <span key={s} className="skill-tag">{s}</span>)}
+        <div className="px-4 pb-3 flex flex-wrap gap-1.5">
+          {skills.map(s => (
+            <span key={s} className="px-2 py-0.5 bg-zinc-100 text-zinc-600 text-[10px] rounded-md font-medium">
+              {s}
+            </span>
+          ))}
         </div>
       )}
 
-      <div className="insights">
+      <div className="px-4 pb-3 flex flex-col gap-1">
         {(c.strengths || []).slice(0, 3).map((s, i) => (
-          <div key={i} className="insight good">✓ {s}</div>
+          <div key={i} className="text-[11px] text-emerald-700 bg-emerald-50 rounded-md px-2.5 py-1.5">
+            {s}
+          </div>
         ))}
         {(c.concerns || []).slice(0, 2).map((s, i) => (
-          <div key={i} className="insight warn">⚠ {s}</div>
+          <div key={i} className="text-[11px] text-amber-700 bg-amber-50 rounded-md px-2.5 py-1.5">
+            {s}
+          </div>
         ))}
       </div>
 
-      <div className="details">
-        <div className="detail-grid">
-          <div className="detail-block">
-            <h5>Project Summary</h5>
-            <p>{c.project_summary || 'N/A'}</p>
+      {open && (
+        <div className="border-t border-zinc-100 p-4 grid md:grid-cols-2 gap-4">
+          <div>
+            <h5 className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider mb-1.5">Project Summary</h5>
+            <p className="text-xs text-zinc-600 leading-relaxed">{c.project_summary || 'N/A'}</p>
           </div>
-          <div className="detail-block">
-            <h5>GitHub</h5>
-            <p>{c.github_summary || 'No GitHub profile found'}</p>
+          <div>
+            <h5 className="text-[10px] font-semibold text-zinc-400 uppercase tracking-wider mb-1.5">GitHub</h5>
+            <p className="text-xs text-zinc-600 leading-relaxed">{c.github_summary || 'No GitHub profile found'}</p>
           </div>
         </div>
-      </div>
+      )}
     </div>
   )
 }
