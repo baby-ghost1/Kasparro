@@ -18,29 +18,8 @@ def setup_logging(verbose: bool = False):
     )
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description="AI Resume Screening & Ranking System",
-    )
-    parser.add_argument(
-        "--input", "-i",
-        default="./resumes",
-        help="Path to directory containing resume PDFs (default: ./resumes)",
-    )
-    parser.add_argument(
-        "--output", "-o",
-        default="./output/results.json",
-        help="Path for output JSON file (default: ./output/results.json)",
-    )
-    parser.add_argument(
-        "--verbose", "-v",
-        action="store_true",
-        help="Enable verbose/debug logging",
-    )
-
-    args = parser.parse_args()
+def cmd_screen(args):
     setup_logging(args.verbose)
-
     logger = logging.getLogger(__name__)
     logger.info("=" * 60)
     logger.info("AI Resume Screening & Ranking System")
@@ -91,6 +70,49 @@ def main():
             print(f"  {c.filename}: {c.parsing_error}")
 
     print(f"\nResults written to: {args.output}")
+
+
+def cmd_report(args):
+    from src.utils.report import print_terminal_report
+    print_terminal_report(args.results)
+
+
+def cmd_serve(args):
+    import uvicorn
+    print(f"Starting API server on http://0.0.0.0:{args.port}")
+    print(f"  POST /screen  — Run screening pipeline")
+    print(f"  GET  /results — Get results JSON")
+    uvicorn.run("src.api:app", host="0.0.0.0", port=args.port, reload=args.reload)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="AI Resume Screening & Ranking System",
+    )
+    subparsers = parser.add_subparsers(dest="command", help="Available commands")
+
+    sp_screen = subparsers.add_parser("screen", help="Run the screening pipeline")
+    sp_screen.add_argument("--input", "-i", default="./resumes", help="Input directory with resumes")
+    sp_screen.add_argument("--output", "-o", default="./output/results.json", help="Output JSON path")
+    sp_screen.add_argument("--verbose", "-v", action="store_true", help="Verbose logging")
+
+    sp_report = subparsers.add_parser("report", help="Show terminal report")
+    sp_report.add_argument("--results", "-r", default="./output/results.json", help="Results JSON path")
+
+    sp_serve = subparsers.add_parser("serve", help="Start FastAPI server")
+    sp_serve.add_argument("--port", "-p", type=int, default=8000, help="Port number")
+    sp_serve.add_argument("--reload", action="store_true", help="Enable auto-reload")
+
+    args = parser.parse_args()
+
+    if args.command == "screen":
+        cmd_screen(args)
+    elif args.command == "report":
+        cmd_report(args)
+    elif args.command == "serve":
+        cmd_serve(args)
+    else:
+        parser.print_help()
 
 
 if __name__ == "__main__":

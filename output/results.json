@@ -36,9 +36,9 @@
           ],
           "python_backend": [
             "Python confirmed as skill/language",
-            "Python backend frameworks: flask, gunicorn, fastapi",
+            "Python backend frameworks: gunicorn, fastapi, flask",
             "Async programming: async",
-            "Database experience: mongodb, postgres, postgresql",
+            "Database experience: postgresql, mongodb, postgres",
             "API development: rest api",
             "Data processing: pandas",
             "Python projects: 2",
@@ -46,14 +46,14 @@
             "Python/Backend: 3 frameworks, 3 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: gcp, ci/cd, docker, terraform, aws",
+            "Cloud/DevOps: gcp, terraform, aws, docker, ci/cd",
             "Containerization: docker",
             "Full-stack breadth (6 technologies)",
             "Cloud/FullStack: 5 cloud, 0 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (12 signals)",
-            "Signals: asyncio, microservice, unit test, async, docker",
+            "Signals: schema, grafana, concurrent, unit test, ci/cd",
             "Engineering depth: 12 signals found"
           ],
           "github": [
@@ -63,15 +63,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Multi-Agent",
-        "Machine Learning",
-        "Python",
-        "Langgraph",
-        "Rag",
+        "Faiss",
         "python",
-        "Scikit-Learn"
+        "Fine-Tuning",
+        "Embeddings",
+        "Tensorflow",
+        "Python",
+        "Pinecone"
       ],
-      "project_summary": "5 AI/ML project(s); Frameworks: rag, langgraph, multi-agent, scikit-learn, machine learning; Python projects: 1; 1 work experience(s)",
+      "project_summary": "5 AI/ML project(s); Frameworks: embeddings, fine-tuning, faiss, tensorflow, pinecone; Python projects: 1; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -130,23 +130,23 @@
           ],
           "python_backend": [
             "Python confirmed as skill/language",
-            "Python backend frameworks: fastapi, uvicorn",
+            "Python backend frameworks: uvicorn, fastapi",
             "Async programming: async",
-            "Database experience: mongodb, redis, postgresql",
+            "Database experience: postgresql, mongodb, redis",
             "API development: rest api",
             "Data processing: pandas",
             "Python/Backend: 2 frameworks, 3 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: github actions, ci/cd, docker, kubernetes, aws",
-            "Frontend: react.js, vue, next.js, react",
+            "Cloud/DevOps: kubernetes, github actions, aws, docker, ci/cd",
+            "Frontend: react.js, next.js, react, vue",
             "Containerization: kubernetes, docker",
             "Full-stack breadth (13 technologies)",
             "Cloud/FullStack: 5 cloud, 4 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (12 signals)",
-            "Signals: containerization, test suite, async, observability, docker",
+            "Signals: observability, kubernetes, pytest, github actions, test suite",
             "Engineering depth: 12 signals found"
           ],
           "github": [
@@ -156,15 +156,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Sentiment Analysis",
-        "Conversational Ai",
+        "python",
+        "Langgraph",
+        "Embeddings",
+        "Vector Search",
         "Python",
-        "Rag",
-        "Hugging Face",
-        "Embedding",
-        "python"
+        "Function Calling",
+        "Hugging Face"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: rag, conversational ai, hugging face, embedding, sentiment analysis; 1 work experience(s)",
+      "project_summary": "2 AI/ML project(s); Frameworks: embeddings, hugging face, vector search, function calling, langgraph; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -222,7 +222,7 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
-            "Database experience: mongodb, postgresql",
+            "Database experience: postgresql, mongodb",
             "API development: rest api",
             "Data processing: data pipeline",
             "Python projects: 2",
@@ -230,7 +230,7 @@
             "Python/Backend: 1 frameworks, 2 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: ci/cd, gcp, docker",
+            "Cloud/DevOps: docker, ci/cd, gcp",
             "Frontend: react",
             "Containerization: docker",
             "Full-stack breadth (9 technologies)",
@@ -238,7 +238,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (12 signals)",
-            "Signals: integration test, microservice, logging, test suite, docker",
+            "Signals: pytest, test suite, logging, testing, ci/cd",
             "Engineering depth: 12 signals found"
           ],
           "github": [
@@ -248,15 +248,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Nlp",
-        "Python",
-        "Agentic",
-        "Rag",
-        "Retrieval-Augmented",
+        "Prompt Engineering",
         "python",
-        "Langchain"
+        "Langgraph",
+        "Python",
+        "Multi-Agent",
+        "Rag",
+        "Retrieval-Augmented"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: retrieval-augmented, rag, agentic, nlp, langchain; Python projects: 1; 1 work experience(s)",
+      "project_summary": "2 AI/ML project(s); Frameworks: langgraph, rag, prompt engineering, retrieval-augmented, multi-agent; Python projects: 1; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -309,7 +309,7 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: flask",
-            "Database experience: mongodb, postgresql, supabase, sqlite",
+            "Database experience: postgresql, mongodb, sqlite, supabase",
             "API development: rest api",
             "Data processing: etl",
             "Python projects: 2",
@@ -317,7 +317,7 @@
             "Python/Backend: 1 frameworks, 4 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: ci/cd, google cloud, docker",
+            "Cloud/DevOps: docker, google cloud, ci/cd",
             "Frontend: next.js, react",
             "Containerization: docker",
             "Full-stack breadth (12 technologies)",
@@ -325,7 +325,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (10 signals)",
-            "Signals: webhook, event-driven, docker, scalability, schema",
+            "Signals: schema, testing, event-driven, concurrent, webhook",
             "Engineering depth: 10 signals found"
           ],
           "github": [
@@ -335,15 +335,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Sentiment Analysis",
-        "Gemini",
-        "Python",
-        "Rag",
-        "Hugging Face",
         "python",
-        "Recommendation System"
+        "Transformers",
+        "Recommendation System",
+        "Python",
+        "Claude",
+        "Hugging Face",
+        "Gpt"
       ],
-      "project_summary": "3 AI/ML project(s); Frameworks: recommendation system, rag, hugging face, gemini, sentiment analysis; Python projects: 1; 1 work experience(s)",
+      "project_summary": "3 AI/ML project(s); Frameworks: transformers, hugging face, recommendation system, gpt, claude; Python projects: 1; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -402,14 +402,14 @@
           ],
           "python_backend": [
             "Python confirmed as skill/language",
-            "Python backend frameworks: celery, fastapi",
+            "Python backend frameworks: fastapi, celery",
             "Async programming: async",
-            "Database experience: redis, postgresql",
+            "Database experience: postgresql, redis",
             "API development: rest api",
             "Python/Backend: 2 frameworks, 2 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: github actions, ci/cd, docker, kubernetes, aws",
+            "Cloud/DevOps: kubernetes, github actions, aws, docker, ci/cd",
             "Frontend: react.js, next.js, react",
             "Containerization: kubernetes, docker",
             "Full-stack breadth (10 technologies)",
@@ -417,7 +417,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (20 signals)",
-            "Signals: microservice, kafka, prometheus, logging, event-driven",
+            "Signals: observability, kubernetes, rate limiting, grafana, celery",
             "Engineering depth: 20 signals found"
           ],
           "github": [
@@ -427,15 +427,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Llama",
-        "Pytorch",
+        "python",
+        "Langgraph",
+        "Embeddings",
+        "Machine Learning",
         "Python",
         "Rag",
-        "Agentic",
-        "Embedding",
-        "python"
+        "Llama"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: pytorch, rag, embedding, agentic, llama; 1 work experience(s)",
+      "project_summary": "2 AI/ML project(s); Frameworks: embeddings, machine learning, llama, langgraph, rag; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -490,7 +490,7 @@
           ],
           "python_backend": [
             "Python confirmed as skill/language",
-            "Python backend frameworks: fastapi, flask, uvicorn",
+            "Python backend frameworks: uvicorn, fastapi, flask",
             "Async programming: async",
             "Database experience: postgresql",
             "API development: rest api",
@@ -505,7 +505,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (10 signals)",
-            "Signals: joi, asyncio, webhook, async, schema",
+            "Signals: schema, grafana, monitoring, pydantic, webhook",
             "Engineering depth: 10 signals found"
           ],
           "github": [
@@ -515,15 +515,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Llama",
-        "Python",
-        "Rag",
-        "Ollama",
-        "Embedding",
         "python",
-        "Mistral"
+        "Mistral",
+        "Langgraph",
+        "Embeddings",
+        "Python",
+        "Llama",
+        "Gpt"
       ],
-      "project_summary": "7 AI/ML project(s); Frameworks: rag, mistral, embedding, llama, ollama; Python projects: 2; 1 work experience(s)",
+      "project_summary": "7 AI/ML project(s); Frameworks: embeddings, mistral, llama, gpt, langgraph; Python projects: 2; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -585,7 +585,7 @@
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi, flask",
             "Async programming: async",
-            "Database experience: mysql, sqlite",
+            "Database experience: sqlite, mysql",
             "API development: rest api",
             "Data processing: pandas",
             "Python projects: 1",
@@ -593,14 +593,14 @@
             "Python/Backend: 2 frameworks, 2 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: docker, aws",
+            "Cloud/DevOps: aws, docker",
             "Containerization: docker",
             "Full-stack breadth (6 technologies)",
             "Cloud/FullStack: 2 cloud, 0 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (8 signals)",
-            "Signals: asyncio, microservice, logging, async, docker",
+            "Signals: pytest, logging, caching, async, asyncio",
             "Engineering depth: 8 signals found"
           ],
           "github": [
@@ -610,15 +610,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Conversational Ai",
-        "Python",
-        "Langgraph",
-        "Agentic",
-        "Rag",
+        "Chromadb",
+        "Weaviate",
+        "python",
         "Transformers",
-        "python"
+        "Fine-Tuning",
+        "Python",
+        "Embedding"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: rag, agentic, langgraph, transformers, conversational ai; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: transformers, fine-tuning, weaviate, embedding, chromadb; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -670,22 +670,22 @@
           ],
           "python_backend": [
             "Python confirmed as skill/language",
-            "Python backend frameworks: fastapi, django",
+            "Python backend frameworks: django, fastapi",
             "Async programming: async",
-            "Database experience: mongodb, postgresql",
+            "Database experience: postgresql, mongodb",
             "API development: rest api",
             "Python projects: 2",
             "Python/Backend: 2 frameworks, 2 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: ci/cd, aws",
+            "Cloud/DevOps: aws, ci/cd",
             "Frontend: reactjs, next.js, react",
             "Full-stack breadth (12 technologies)",
             "Cloud/FullStack: 2 cloud, 3 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (8 signals)",
-            "Signals: async, concurrency, threading, queue, pipeline",
+            "Signals: concurrency, concurrent, ci/cd, async, pipeline",
             "Engineering depth: 8 signals found"
           ],
           "github": [
@@ -695,15 +695,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Gemini",
+        "python",
+        "Langgraph",
+        "Embeddings",
+        "Machine Learning",
         "Python",
-        "Rag",
-        "Agentic",
-        "Hugging Face",
-        "Embedding",
-        "python"
+        "Deep Learning",
+        "Hugging Face"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: rag, hugging face, embedding, agentic, gemini; Python projects: 2",
+      "project_summary": "2 AI/ML project(s); Frameworks: embeddings, machine learning, hugging face, deep learning, langgraph; Python projects: 2",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -759,13 +759,13 @@
             "Python confirmed as skill/language",
             "Python backend frameworks: django, fastapi, flask",
             "Async programming: async",
-            "Database experience: mongodb, redis, postgresql, mysql",
+            "Database experience: postgresql, mongodb, redis, mysql",
             "API development: rest api",
             "Python projects: 2",
             "Python/Backend: 3 frameworks, 4 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: nginx, github actions, ci/cd, docker, aws",
+            "Cloud/DevOps: github actions, nginx, aws, docker, ci/cd",
             "Frontend: reactjs, react",
             "Containerization: docker",
             "Full-stack breadth (11 technologies)",
@@ -773,7 +773,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (11 signals)",
-            "Signals: microservice, kafka, unit test, async, docker",
+            "Signals: pytest, github actions, kafka, concurrent, unit test",
             "Engineering depth: 11 signals found"
           ],
           "github": [
@@ -783,15 +783,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
+        "Agent",
+        "python",
         "Langgraph",
-        "Rag",
-        "Gemini",
-        "Langchain",
         "Milvus",
-        "python"
+        "Python",
+        "Rag",
+        "Gemini"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: rag, milvus, gemini, langchain, langgraph; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: langgraph, rag, gemini, milvus, agent; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Solid AI project experience",
@@ -857,7 +857,7 @@
             "Python/Backend: 1 frameworks, 1 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: docker, aws",
+            "Cloud/DevOps: aws, docker",
             "Frontend: next.js, react",
             "Containerization: docker",
             "Full-stack breadth (8 technologies)",
@@ -865,7 +865,7 @@
           ],
           "engineering_depth": [
             "Good engineering depth (5 signals)",
-            "Signals: logging, docker, pipeline, pydantic, validation",
+            "Signals: logging, pydantic, pipeline, validation, docker",
             "Engineering depth: 5 signals found"
           ],
           "github": [
@@ -875,15 +875,15 @@
         "penalties": []
       },
       "matched_skills": [
+        "python",
+        "Transformers",
+        "Machine Learning",
         "Python",
-        "Rag",
-        "Anthropic",
-        "Agentic",
-        "Hugging Face",
-        "Object Detection",
-        "python"
+        "Claude",
+        "Llama",
+        "Hugging Face"
       ],
-      "project_summary": "4 AI/ML project(s); Frameworks: object detection, anthropic, rag, hugging face, agentic; 1 work experience(s)",
+      "project_summary": "4 AI/ML project(s); Frameworks: transformers, machine learning, hugging face, llama, claude; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -939,16 +939,16 @@
           ],
           "python_backend": [
             "Python confirmed as skill/language",
-            "Python backend frameworks: django, celery, flask, fastapi",
+            "Python backend frameworks: django, celery, fastapi, flask",
             "Async programming: async",
-            "Database experience: mongodb, redis, postgresql, mysql",
+            "Database experience: postgresql, mongodb, redis, mysql",
             "Data processing: pandas",
             "Python projects: 1",
             "Python work experience: 1",
             "Python/Backend: 4 frameworks, 4 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: docker, aws",
+            "Cloud/DevOps: aws, docker",
             "Frontend: react.js, react",
             "Containerization: docker",
             "Full-stack breadth (13 technologies)",
@@ -956,7 +956,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (6 signals)",
-            "Signals: joi, async, celery, docker, scalability",
+            "Signals: celery, async, pipeline, scalability, joi",
             "Engineering depth: 6 signals found"
           ],
           "github": [
@@ -966,15 +966,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Nlp",
         "Prompt Engineering",
-        "Vector Database",
+        "python",
+        "Embeddings",
         "Python",
+        "Nlp",
         "Rag",
-        "Embedding",
-        "python"
+        "Embedding"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: rag, embedding, vector database, nlp, prompt engineering; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: embeddings, rag, prompt engineering, embedding, nlp; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Solid AI project experience",
@@ -1023,14 +1023,14 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: django, fastapi, flask",
-            "Database experience: mongodb, postgresql, mysql",
+            "Database experience: postgresql, mongodb, mysql",
             "API development: rest api",
             "Data processing: pandas",
             "Python projects: 3",
             "Python/Backend: 3 frameworks, 3 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: ci/cd, docker, jenkins",
+            "Cloud/DevOps: jenkins, docker, ci/cd",
             "Frontend: react.js, next.js, react",
             "Containerization: docker",
             "Full-stack breadth (12 technologies)",
@@ -1038,7 +1038,7 @@
           ],
           "engineering_depth": [
             "Good engineering depth (5 signals)",
-            "Signals: docker, pipeline, jenkins, validation, ci/cd",
+            "Signals: ci/cd, jenkins, pipeline, validation, docker",
             "Engineering depth: 5 signals found"
           ],
           "github": [
@@ -1048,15 +1048,15 @@
         "penalties": []
       },
       "matched_skills": [
+        "python",
         "Keras",
-        "Deep Learning",
-        "Llama",
+        "Machine Learning",
         "Python",
-        "Tensorflow",
         "Rag",
-        "python"
+        "Llama",
+        "Deep Learning"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: rag, keras, tensorflow, deep learning, llama; Python projects: 2; 1 work experience(s)",
+      "project_summary": "2 AI/ML project(s); Frameworks: machine learning, deep learning, llama, rag, keras; Python projects: 2; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Solid AI project experience",
@@ -1110,7 +1110,7 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
-            "Database experience: mysql, postgresql",
+            "Database experience: postgresql, mysql",
             "API development: rest api",
             "Data processing: pandas",
             "Python projects: 2",
@@ -1125,7 +1125,7 @@
           ],
           "engineering_depth": [
             "Moderate engineering depth (3 signals)",
-            "Signals: docker, schema, pipeline",
+            "Signals: schema, pipeline, docker",
             "Engineering depth: 3 signals found"
           ],
           "github": [
@@ -1135,15 +1135,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Keras",
-        "Python",
         "Image Classification",
+        "python",
+        "Machine Learning",
+        "Python",
         "Rag",
-        "Tensorflow",
-        "Embedding",
-        "python"
+        "Deep Learning",
+        "Gpt"
       ],
-      "project_summary": "6 AI/ML project(s); Frameworks: image classification, rag, keras, embedding, tensorflow; Python projects: 2; 1 work experience(s)",
+      "project_summary": "6 AI/ML project(s); Frameworks: machine learning, deep learning, image classification, gpt, rag; Python projects: 2; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -1212,7 +1212,7 @@
           ],
           "engineering_depth": [
             "Good engineering depth (5 signals)",
-            "Signals: async, rate limiting, schema, pipeline, pydantic",
+            "Signals: rate limiting, schema, pydantic, async, pipeline",
             "Engineering depth: 5 signals found"
           ],
           "github": [
@@ -1222,15 +1222,15 @@
         "penalties": []
       },
       "matched_skills": [
+        "python",
+        "Langgraph",
         "Python",
-        "Tool-Calling",
-        "Rag",
+        "Multi-Agent",
         "Agentic",
-        "Retrieval-Augmented",
-        "Tool Calling",
-        "python"
+        "Rag",
+        "Retrieval-Augmented"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: retrieval-augmented, rag, tool calling, agentic, tool-calling; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: langgraph, rag, retrieval-augmented, multi-agent, agentic; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -1283,7 +1283,7 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
-            "Database experience: mysql, sqlite",
+            "Database experience: sqlite, mysql",
             "API development: rest api",
             "Data processing: pandas",
             "Python projects: 2",
@@ -1296,7 +1296,7 @@
           ],
           "engineering_depth": [
             "Moderate engineering depth (3 signals)",
-            "Signals: testing, pipeline, github actions",
+            "Signals: github actions, testing, pipeline",
             "Engineering depth: 3 signals found"
           ],
           "github": [
@@ -1306,15 +1306,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Multi-Agent",
-        "Python",
-        "Agentic",
-        "Rag",
-        "Crewai",
+        "Weaviate",
+        "python",
         "Transformers",
-        "python"
+        "Embeddings",
+        "Python",
+        "Embedding",
+        "Bert"
       ],
-      "project_summary": "3 AI/ML project(s); Frameworks: crewai, rag, agentic, multi-agent, transformers; Python projects: 2; 1 work experience(s)",
+      "project_summary": "3 AI/ML project(s); Frameworks: transformers, embeddings, weaviate, bert, embedding; Python projects: 2; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -1373,7 +1373,7 @@
             "Python/Backend: 1 frameworks, 1 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: docker, aws",
+            "Cloud/DevOps: aws, docker",
             "Frontend: react",
             "Containerization: docker",
             "Full-stack breadth (3 technologies)",
@@ -1381,7 +1381,7 @@
           ],
           "engineering_depth": [
             "Moderate engineering depth (3 signals)",
-            "Signals: logging, docker, pipeline",
+            "Signals: logging, pipeline, docker",
             "Engineering depth: 3 signals found"
           ],
           "github": [
@@ -1391,15 +1391,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Llama",
-        "Pytorch",
+        "python",
+        "Transformers",
+        "Machine Learning",
         "Python",
         "Rag",
-        "Retrieval-Augmented",
-        "Ollama",
-        "python"
+        "Llama",
+        "Deep Learning"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: pytorch, retrieval-augmented, rag, llama, ollama; Python projects: 1; 1 work experience(s)",
+      "project_summary": "2 AI/ML project(s); Frameworks: transformers, machine learning, deep learning, llama, rag; Python projects: 1; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -1456,13 +1456,13 @@
             "Python/Backend: 0 frameworks, 1 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: github actions, ci/cd, jenkins, docker, terraform, ansible, kubernetes, aws",
+            "Cloud/DevOps: kubernetes, ci/cd, ansible, jenkins, terraform, aws, docker, github actions",
             "Containerization: kubernetes, docker",
             "Cloud/FullStack: 8 cloud, 0 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (8 signals)",
-            "Signals: docker, pipeline, github actions, jenkins, monitoring",
+            "Signals: kubernetes, github actions, monitoring, concurrent, ci/cd",
             "Engineering depth: 8 signals found"
           ],
           "github": [
@@ -1472,14 +1472,14 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
         "Openai",
-        "Rag",
-        "Sklearn",
+        "Scikit-Learn",
         "python",
-        "Scikit-Learn"
+        "Python",
+        "Sklearn",
+        "Rag"
       ],
-      "project_summary": "5 AI/ML project(s); Frameworks: openai, sklearn, scikit-learn, rag; Python projects: 3",
+      "project_summary": "5 AI/ML project(s); Frameworks: openai, rag, sklearn, scikit-learn; Python projects: 3",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -1531,21 +1531,21 @@
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
             "Async programming: async",
-            "Database experience: mongodb, redis, postgresql",
+            "Database experience: postgresql, mongodb, redis",
             "API development: rest api",
             "Python projects: 1",
             "Python/Backend: 1 frameworks, 3 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: ci/cd, docker, aws",
-            "Frontend: vue.js, vue, next.js, react",
+            "Cloud/DevOps: aws, docker, ci/cd",
+            "Frontend: next.js, vue.js, react, vue",
             "Containerization: docker",
             "Full-stack breadth (12 technologies)",
             "Cloud/FullStack: 3 cloud, 4 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (11 signals)",
-            "Signals: event-driven, async, concurrency, docker, scalability",
+            "Signals: schema, concurrency, monitoring, event-driven, ci/cd",
             "Engineering depth: 11 signals found"
           ],
           "github": [
@@ -1555,14 +1555,14 @@
         "penalties": []
       },
       "matched_skills": [
-        "Prompt Engineering",
-        "Claude",
         "Agent",
-        "Python",
+        "Prompt Engineering",
+        "python",
         "Langgraph",
-        "python"
+        "Python",
+        "Claude"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: prompt engineering, claude, langgraph, agent; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: langgraph, agent, prompt engineering, claude; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Solid AI project experience",
@@ -1620,7 +1620,7 @@
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
             "Async programming: async",
-            "Database experience: mongodb, postgresql, mysql, sqlite",
+            "Database experience: postgresql, mongodb, sqlite, mysql",
             "Python work experience: 1",
             "Python/Backend: 1 frameworks, 4 databases"
           ],
@@ -1641,15 +1641,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
-        "Rag",
-        "Agentic",
         "Crewai",
-        "Embedding",
-        "Tool Calling",
-        "python"
+        "Prompt Engineering",
+        "python",
+        "Langgraph",
+        "Embeddings",
+        "Python",
+        "Rag"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: crewai, rag, tool calling, embedding, agentic; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: embeddings, langgraph, crewai, rag, prompt engineering; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -1702,12 +1702,12 @@
             "Python confirmed as skill/language",
             "Python backend frameworks: flask",
             "Async programming: async",
-            "Database experience: mongodb, redis, postgresql, mysql",
+            "Database experience: postgresql, mongodb, redis, mysql",
             "API development: rest api",
             "Python/Backend: 1 frameworks, 4 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: github actions, docker, aws",
+            "Cloud/DevOps: aws, docker, github actions",
             "Frontend: react.js, reactjs, react",
             "Containerization: docker",
             "Full-stack breadth (13 technologies)",
@@ -1715,7 +1715,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (10 signals)",
-            "Signals: microservice, kafka, webhook, event-driven, async",
+            "Signals: github actions, kafka, monitoring, event-driven, caching",
             "Engineering depth: 10 signals found"
           ],
           "github": [
@@ -1725,13 +1725,13 @@
         "penalties": []
       },
       "matched_skills": [
-        "Gemini",
-        "Python",
         "Openai",
+        "python",
+        "Python",
         "Rag",
-        "python"
+        "Gemini"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: gemini, rag, openai; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: rag, openai, gemini; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Solid AI project experience",
@@ -1782,7 +1782,7 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Async programming: async",
-            "Database experience: mongodb, redis, postgresql",
+            "Database experience: postgresql, mongodb, redis",
             "API development: rest api",
             "Python/Backend: 0 frameworks, 3 databases"
           ],
@@ -1795,7 +1795,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (15 signals)",
-            "Signals: microservice, kafka, prometheus, logging, webhook",
+            "Signals: rate limiting, schema, concurrency, kafka, logging",
             "Engineering depth: 15 signals found"
           ],
           "github": [
@@ -1805,14 +1805,14 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
         "Openai",
-        "Rag",
-        "Vector Search",
         "python",
-        "Langchain"
+        "Langchain",
+        "Vector Search",
+        "Python",
+        "Rag"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: openai, langchain, vector search, rag; 1 work experience(s)",
+      "project_summary": "2 AI/ML project(s); Frameworks: openai, rag, vector search, langchain; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Solid AI project experience",
@@ -1861,7 +1861,7 @@
           ],
           "python_backend": [
             "Python confirmed as skill/language",
-            "Python backend frameworks: fastapi, django",
+            "Python backend frameworks: django, fastapi",
             "Database experience: postgresql",
             "API development: rest api",
             "Python projects: 2",
@@ -1884,15 +1884,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Nlp",
+        "Scikit-Learn",
         "Prompt Engineering",
-        "Python",
-        "Langgraph",
-        "Rag",
         "python",
-        "Langchain"
+        "Langgraph",
+        "Machine Learning",
+        "Python",
+        "Rag"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: rag, nlp, langchain, langgraph, prompt engineering; Python projects: 2; 1 work experience(s)",
+      "project_summary": "2 AI/ML project(s); Frameworks: machine learning, langgraph, rag, prompt engineering, scikit-learn; Python projects: 2; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Solid AI project experience",
@@ -1943,7 +1943,7 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
-            "Database experience: mongodb, postgresql",
+            "Database experience: postgresql, mongodb",
             "API development: rest api",
             "Data processing: etl",
             "Python projects: 2",
@@ -1966,12 +1966,12 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
+        "Openai",
         "python",
-        "Langgraph",
-        "Openai"
+        "Python",
+        "Langgraph"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: openai, langgraph; Python projects: 1",
+      "project_summary": "2 AI/ML project(s); Frameworks: langgraph, openai; Python projects: 1",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Solid AI project experience",
@@ -2022,16 +2022,16 @@
           ],
           "python_backend": [
             "Python confirmed as skill/language",
-            "Python backend frameworks: fastapi, django",
+            "Python backend frameworks: django, fastapi",
             "Async programming: async",
-            "Database experience: mongodb, redis, postgresql",
+            "Database experience: postgresql, mongodb, redis",
             "API development: rest api",
             "Data processing: etl",
             "Python work experience: 1",
             "Python/Backend: 2 frameworks, 3 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: ci/cd, azure, jenkins, docker, kubernetes, aws",
+            "Cloud/DevOps: azure, kubernetes, jenkins, aws, docker, ci/cd",
             "Frontend: react",
             "Containerization: kubernetes, docker",
             "Full-stack breadth (8 technologies)",
@@ -2039,7 +2039,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (15 signals)",
-            "Signals: prometheus, test suite, unit test, async, docker",
+            "Signals: kubernetes, test suite, testing, pydantic, caching",
             "Engineering depth: 15 signals found"
           ],
           "github": [
@@ -2049,15 +2049,15 @@
         "penalties": []
       },
       "matched_skills": [
+        "python",
+        "Langgraph",
+        "Embeddings",
+        "Vector Search",
         "Python",
         "Rag",
-        "Retrieval-Augmented",
-        "Eval Pipeline",
-        "Embedding",
-        "python",
-        "Langchain"
+        "Retrieval-Augmented"
       ],
-      "project_summary": "Frameworks: retrieval-augmented, rag, embedding, eval pipeline, langchain; 2 work experience(s)",
+      "project_summary": "Frameworks: embeddings, vector search, langgraph, rag, retrieval-augmented; 2 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong Python/Backend engineering",
@@ -2130,14 +2130,14 @@
         "penalties": []
       },
       "matched_skills": [
-        "Gemini",
+        "Scikit-Learn",
+        "python",
         "Machine Learning",
         "Python",
         "Rag",
-        "python",
-        "Scikit-Learn"
+        "Gemini"
       ],
-      "project_summary": "2 AI/ML project(s); Frameworks: gemini, scikit-learn, rag, machine learning; Python projects: 1; 1 work experience(s)",
+      "project_summary": "2 AI/ML project(s); Frameworks: rag, machine learning, gemini, scikit-learn; Python projects: 1; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Solid AI project experience",
@@ -2206,15 +2206,15 @@
         "penalties": []
       },
       "matched_skills": [
+        "Prompt Engineering",
+        "python",
+        "Embeddings",
         "Machine Learning",
         "Python",
         "Rag",
-        "Agentic",
-        "Retrieval-Augmented",
-        "Embedding",
-        "python"
+        "Retrieval-Augmented"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: retrieval-augmented, rag, machine learning, embedding, agentic",
+      "project_summary": "1 AI/ML project(s); Frameworks: embeddings, machine learning, rag, prompt engineering, retrieval-augmented",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Strong AI/Agentic project depth",
@@ -2276,14 +2276,14 @@
             "Python/Backend: 1 frameworks, 1 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: docker, jenkins",
+            "Cloud/DevOps: jenkins, docker",
             "Containerization: docker",
             "Full-stack breadth (3 technologies)",
             "Cloud/FullStack: 2 cloud, 0 frontend"
           ],
           "engineering_depth": [
             "Good engineering depth (4 signals)",
-            "Signals: docker, pipeline, jenkins, monitoring",
+            "Signals: monitoring, jenkins, pipeline, docker",
             "Engineering depth: 4 signals found"
           ],
           "github": [
@@ -2293,15 +2293,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Deep Learning",
-        "Machine Learning",
-        "Python",
         "Image Classification",
+        "Scikit-Learn",
         "python",
         "Neural Network",
-        "Scikit-Learn"
+        "Machine Learning",
+        "Python",
+        "Deep Learning"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: image classification, neural network, deep learning, scikit-learn, machine learning; Python projects: 1; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: machine learning, deep learning, image classification, scikit-learn, neural network; Python projects: 1; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Good Python backend skills",
@@ -2352,7 +2352,7 @@
             "Python/Backend: 2 frameworks, 3 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: github actions, ci/cd, azure, docker, aws",
+            "Cloud/DevOps: azure, github actions, aws, docker, ci/cd",
             "Frontend: react.js, react",
             "Containerization: docker",
             "Full-stack breadth (15 technologies)",
@@ -2360,7 +2360,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (7 signals)",
-            "Signals: joi, kafka, async, docker, caching",
+            "Signals: github actions, kafka, caching, ci/cd, async",
             "Engineering depth: 7 signals found"
           ],
           "github": [
@@ -2370,13 +2370,13 @@
         "penalties": []
       },
       "matched_skills": [
-        "Claude",
+        "python",
         "Machine Learning",
         "Python",
-        "Rag",
-        "python"
+        "Claude",
+        "Rag"
       ],
-      "project_summary": "Frameworks: claude, rag, machine learning",
+      "project_summary": "Frameworks: machine learning, rag, claude",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Strong Python/Backend engineering",
@@ -2433,7 +2433,7 @@
             "Python/Backend: 1 frameworks, 1 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: gcp, google cloud",
+            "Cloud/DevOps: google cloud, gcp",
             "Full-stack breadth (5 technologies)",
             "Cloud/FullStack: 2 cloud, 0 frontend"
           ],
@@ -2449,15 +2449,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Nlp",
+        "Scikit-Learn",
+        "python",
         "Machine Learning",
         "Python",
+        "Nlp",
         "Rag",
-        "Gemini",
-        "Scikit-Learn",
-        "python"
+        "Gemini"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: rag, gemini, nlp, scikit-learn, machine learning; Python projects: 1; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: machine learning, rag, gemini, scikit-learn, nlp; Python projects: 1; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Solid AI project experience",
@@ -2503,21 +2503,21 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
-            "Database experience: mysql, postgresql",
+            "Database experience: postgresql, mysql",
             "API development: rest api",
             "Data processing: etl",
             "Python work experience: 2",
             "Python/Backend: 1 frameworks, 2 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: google cloud, docker, aws",
+            "Cloud/DevOps: docker, aws, google cloud",
             "Containerization: docker",
             "Full-stack breadth (5 technologies)",
             "Cloud/FullStack: 3 cloud, 0 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (11 signals)",
-            "Signals: joi, microservice, logging, error handling, observability",
+            "Signals: observability, schema, logging, pydantic, error handling",
             "Engineering depth: 11 signals found"
           ],
           "github": [
@@ -2527,15 +2527,15 @@
         "penalties": []
       },
       "matched_skills": [
+        "python",
+        "Transformers",
+        "Embeddings",
+        "Conversational Ai",
         "Python",
-        "Langgraph",
-        "Agentic",
-        "Rag",
-        "Retrieval-Augmented",
-        "Function Calling",
-        "python"
+        "Pinecone",
+        "Embedding"
       ],
-      "project_summary": "Frameworks: retrieval-augmented, rag, agentic, function calling, langgraph; 3 work experience(s)",
+      "project_summary": "Frameworks: transformers, embeddings, pinecone, embedding, conversational ai; 3 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Good Python backend skills",
@@ -2608,14 +2608,14 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
-        "Tensorflow",
         "Openai",
-        "Rag",
         "python",
-        "Langchain"
+        "Langchain",
+        "Tensorflow",
+        "Python",
+        "Rag"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: openai, langchain, tensorflow, rag; Python projects: 1; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: openai, tensorflow, rag, langchain; Python projects: 1; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Solid AI project experience",
@@ -2677,7 +2677,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (6 signals)",
-            "Signals: error handling, schema, testing, pipeline, validation",
+            "Signals: schema, testing, ci/cd, error handling, pipeline",
             "Engineering depth: 6 signals found"
           ],
           "github": [
@@ -2687,9 +2687,9 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
+        "Rag",
         "python",
-        "Rag"
+        "Python"
       ],
       "project_summary": "1 AI/ML project(s); Frameworks: rag; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
@@ -2760,12 +2760,12 @@
         "penalties": []
       },
       "matched_skills": [
-        "Machine Learning",
-        "Python",
+        "Rag",
         "python",
-        "Rag"
+        "Machine Learning",
+        "Python"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: rag, machine learning; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: machine learning, rag; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Good Python backend skills",
@@ -2816,19 +2816,19 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi, flask",
-            "Database experience: mongodb, postgres, postgresql",
+            "Database experience: postgresql, mongodb, postgres",
             "Python/Backend: 2 frameworks, 3 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: google cloud, docker",
-            "Frontend: react.js, nextjs, react",
+            "Cloud/DevOps: docker, google cloud",
+            "Frontend: nextjs, react.js, react",
             "Containerization: docker",
             "Full-stack breadth (12 technologies)",
             "Cloud/FullStack: 2 cloud, 3 frontend"
           ],
           "engineering_depth": [
             "Good engineering depth (5 signals)",
-            "Signals: docker, testing, pipeline, validation, concurrent",
+            "Signals: testing, concurrent, pipeline, validation, docker",
             "Engineering depth: 5 signals found"
           ],
           "github": [
@@ -2838,15 +2838,15 @@
         "penalties": []
       },
       "matched_skills": [
+        "python",
         "Pytorch",
-        "Computer Vision",
-        "Python",
         "Tensorflow",
+        "Machine Learning",
+        "Python",
         "Rag",
-        "Gemini",
-        "python"
+        "Computer Vision"
       ],
-      "project_summary": "Frameworks: pytorch, rag, gemini, tensorflow, computer vision; 1 work experience(s)",
+      "project_summary": "Frameworks: machine learning, rag, pytorch, computer vision, tensorflow; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Good Python backend skills",
@@ -2906,13 +2906,13 @@
             "Python/Backend: 0 frameworks, 1 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: ci/cd, jenkins",
+            "Cloud/DevOps: jenkins, ci/cd",
             "Full-stack breadth (4 technologies)",
             "Cloud/FullStack: 2 cloud, 0 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (6 signals)",
-            "Signals: microservice, pipeline, microservices, jenkins, validation",
+            "Signals: ci/cd, jenkins, pipeline, microservice, microservices",
             "Engineering depth: 6 signals found"
           ],
           "github": [
@@ -2922,13 +2922,13 @@
         "penalties": []
       },
       "matched_skills": [
-        "Claude",
-        "Python",
-        "Rag",
         "python",
-        "Neural Network"
+        "Neural Network",
+        "Python",
+        "Claude",
+        "Rag"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: neural network, claude, rag; Python projects: 1; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: neural network, rag, claude; Python projects: 1; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Cloud/DevOps experience",
@@ -2975,18 +2975,18 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
-            "Database experience: sqlite, redis, postgresql",
+            "Database experience: postgresql, redis, sqlite",
             "Python/Backend: 1 frameworks, 3 databases"
           ],
           "cloud_fullstack": [
-            "Cloud/DevOps: github actions, ci/cd, azure",
+            "Cloud/DevOps: azure, ci/cd, github actions",
             "Frontend: next.js, react",
             "Full-stack breadth (6 technologies)",
             "Cloud/FullStack: 3 cloud, 2 frontend"
           ],
           "engineering_depth": [
             "Strong engineering depth (12 signals)",
-            "Signals: joi, logging, webhook, observability, caching",
+            "Signals: observability, github actions, logging, testing, sentry",
             "Engineering depth: 12 signals found"
           ],
           "github": [
@@ -2996,15 +2996,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Agent",
-        "Python",
-        "Langgraph",
         "Openai",
+        "Agent",
+        "python",
+        "Langgraph",
+        "Python",
         "Agentic",
-        "Rag",
-        "python"
+        "Rag"
       ],
-      "project_summary": "Frameworks: rag, agentic, langgraph, openai, agent; 1 work experience(s)",
+      "project_summary": "Frameworks: langgraph, rag, openai, agentic, agent; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Good Python backend skills",
@@ -3057,7 +3057,7 @@
           "python_backend": [
             "Python confirmed as skill/language",
             "Python backend frameworks: fastapi",
-            "Database experience: mongodb, redis, postgresql, supabase",
+            "Database experience: postgresql, mongodb, redis, supabase",
             "API development: rest api",
             "Python/Backend: 1 frameworks, 4 databases"
           ],
@@ -3070,7 +3070,7 @@
           ],
           "engineering_depth": [
             "Good engineering depth (4 signals)",
-            "Signals: docker, caching, pipeline, validation",
+            "Signals: caching, pipeline, validation, docker",
             "Engineering depth: 4 signals found"
           ],
           "github": [
@@ -3080,8 +3080,8 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
-        "python"
+        "python",
+        "Python"
       ],
       "project_summary": "1 AI/ML project(s); 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
@@ -3158,12 +3158,12 @@
         ]
       },
       "matched_skills": [
-        "Machine Learning",
-        "Python",
+        "Rag",
         "python",
-        "Rag"
+        "Machine Learning",
+        "Python"
       ],
-      "project_summary": "1 AI/ML project(s); Frameworks: rag, machine learning; Python projects: 1; 1 work experience(s)",
+      "project_summary": "1 AI/ML project(s); Frameworks: machine learning, rag; Python projects: 1; 1 work experience(s)",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Good Python backend skills",
@@ -3213,7 +3213,7 @@
             "Python confirmed as skill/language",
             "Python backend frameworks: django",
             "Async programming: async",
-            "Database experience: mysql, postgresql",
+            "Database experience: postgresql, mysql",
             "API development: rest api",
             "Python/Backend: 1 frameworks, 2 databases"
           ],
@@ -3224,7 +3224,7 @@
           ],
           "engineering_depth": [
             "Strong engineering depth (7 signals)",
-            "Signals: logging, async, concurrency, rate limiting, pipeline",
+            "Signals: rate limiting, concurrency, logging, concurrent, async",
             "Engineering depth: 7 signals found"
           ],
           "github": [
@@ -3234,15 +3234,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
-        "Langgraph",
-        "Rag",
-        "Ollama",
-        "Embedding",
         "python",
-        "Langchain"
+        "Langgraph",
+        "Embeddings",
+        "Vector Search",
+        "Python",
+        "Rag",
+        "Llama"
       ],
-      "project_summary": "Frameworks: rag, embedding, ollama, langchain, langgraph; 1 work experience(s)",
+      "project_summary": "Frameworks: embeddings, vector search, llama, langgraph, rag; 1 work experience(s)",
       "github_summary": "Recent activity: 0/5",
       "strengths": [
         "Good Python backend skills",
@@ -3308,7 +3308,7 @@
           ],
           "engineering_depth": [
             "Good engineering depth (4 signals)",
-            "Signals: joi, exception handling, pipeline, validation",
+            "Signals: pipeline, validation, exception handling, joi",
             "Engineering depth: 4 signals found"
           ],
           "github": [
@@ -3318,9 +3318,9 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
+        "Tensorflow",
         "python",
-        "Tensorflow"
+        "Python"
       ],
       "project_summary": "1 AI/ML project(s); Frameworks: tensorflow",
       "github_summary": "Recent activity: 0/5",
@@ -3395,15 +3395,15 @@
         "penalties": []
       },
       "matched_skills": [
-        "Keras",
-        "Pytorch",
-        "Python",
         "Image Classification",
+        "python",
+        "Machine Learning",
+        "Python",
         "Rag",
-        "Hugging Face",
-        "python"
+        "Deep Learning",
+        "Hugging Face"
       ],
-      "project_summary": "Frameworks: image classification, pytorch, rag, keras, hugging face",
+      "project_summary": "Frameworks: machine learning, deep learning, hugging face, image classification, rag",
       "github_summary": "No GitHub URL found in resume",
       "strengths": [
         "Good Python backend skills",
@@ -3530,10 +3530,10 @@
         "penalties": []
       },
       "matched_skills": [
-        "Vector Database",
+        "Openai",
+        "Embeddings",
         "Rag",
         "Retrieval-Augmented",
-        "Embedding",
         "Gpt"
       ],
       "project_summary": "",
@@ -3616,8 +3616,8 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
-        "python"
+        "python",
+        "Python"
       ],
       "project_summary": "",
       "github_summary": "",
@@ -3658,8 +3658,8 @@
         "penalties": []
       },
       "matched_skills": [
-        "Python",
-        "python"
+        "python",
+        "Python"
       ],
       "project_summary": "",
       "github_summary": "",
@@ -3700,9 +3700,9 @@
         "penalties": []
       },
       "matched_skills": [
-        "Conversational Ai",
         "Openai",
-        "Rag"
+        "Rag",
+        "Conversational Ai"
       ],
       "project_summary": "",
       "github_summary": "",

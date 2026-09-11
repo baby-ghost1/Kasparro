@@ -108,22 +108,32 @@ cp .env.example .env
 
 ## Running the Application
 
-### Basic Usage
+### Screen Resumes (CLI)
+
+```bash
+python main.py screen --input ./resumes --output ./output/results.json
+```
+
+### Terminal Report
+
+```bash
+python main.py report --results ./output/results.json
+```
+
+### FastAPI Server
+
+```bash
+python main.py serve --port 8000
+```
+
+Then:
+- `POST http://localhost:8000/screen` — Run screening pipeline
+- `GET http://localhost:8000/results` — Get results JSON
+
+### Legacy CLI (still works)
 
 ```bash
 python main.py --input ./resumes --output ./output/results.json
-```
-
-### With Verbose Logging
-
-```bash
-python main.py --input ./resumes --output ./output/results.json --verbose
-```
-
-### Custom Directories
-
-```bash
-python main.py --input /path/to/resumes --output /path/to/output/results.json
 ```
 
 ## Output Format

@@ -1,16 +1,35 @@
 import json
+import time
+import asyncio
 import logging
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.config import Config
-from src.models import CandidateResult, ScreeningResult, BatchSummary
+from src.models import CandidateResult, ScreeningResult, BatchSummary, GitHubEnrichment
 from src.ingestion.file_discovery import discover_resumes
 from src.ingestion.pdf_parser import extract_text_from_pdf
+from src.ingestion.docx_parser import extract_text_from_docx
 from src.extraction.extractor import extract_candidate_info
 from src.screening.eligibility import check_eligibility
 from src.screening.scorer import score_candidate, _generate_strengths_concerns, _generate_project_summary
 from src.enrichment.github_enricher import enrich_github
 
 logger = logging.getLogger(__name__)
+
+MAX_WORKERS = 8
+
+
+def _extract_text(filepath: str) -> str:
+    ext = Path(filepath).suffix.lower()
+    if ext == ".pdf":
+        return extract_text_from_pdf(filepath)
+    elif ext == ".docx":
+        return extract_text_from_docx(filepath)
+    elif ext == ".txt":
+        with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+            return f.read()
+    else:
+        raise ValueError(f"Unsupported file format: {ext}")
 
 
 def process_single_resume(
@@ -21,13 +40,13 @@ def process_single_resume(
     result = CandidateResult(filename=filename)
 
     try:
-        raw_text = extract_text_from_pdf(filepath)
+        raw_text = _extract_text(filepath)
         if not raw_text.strip():
-            result.parsing_error = "Empty or unreadable PDF"
+            result.parsing_error = "Empty or unreadable file"
             logger.warning(f"Empty text from {filename}")
             return result
     except Exception as e:
-        result.parsing_error = f"PDF parsing failed: {str(e)}"
+        result.parsing_error = f"Parsing failed: {str(e)}"
         logger.error(f"Failed to parse {filename}: {e}")
         return result
 
@@ -90,13 +109,11 @@ def process_single_resume(
     return result
 
 
-from src.models import GitHubEnrichment
-
-
 def run_pipeline(input_dir: str, output_path: str, config: Config | None = None) -> ScreeningResult:
     if config is None:
         config = Config()
 
+    start_time = time.time()
     logger.info(f"Starting screening pipeline: input={input_dir}, output={output_path}")
 
     files = discover_resumes(input_dir)
@@ -107,20 +124,27 @@ def run_pipeline(input_dir: str, output_path: str, config: Config | None = None)
     screening_result = ScreeningResult()
     batch_summary = BatchSummary(total_resumes=len(files))
 
+    results_map: dict[str, CandidateResult] = {}
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_to_file = {
+            executor.submit(process_single_resume, f["filename"], f["path"], config): f["filename"]
+            for f in files
+        }
+        for future in as_completed(future_to_file):
+            filename = future_to_file[future]
+            try:
+                candidate_result = future.result()
+            except Exception as e:
+                logger.error(f"Unexpected error processing {filename}: {e}")
+                candidate_result = CandidateResult(
+                    filename=filename,
+                    parsing_error=f"Unexpected error: {str(e)}",
+                )
+            results_map[filename] = candidate_result
+
     for file_info in files:
-        filename = file_info["filename"]
-        filepath = file_info["path"]
-        logger.info(f"Processing {filename}...")
-
-        try:
-            candidate_result = process_single_resume(filename, filepath, config)
-        except Exception as e:
-            logger.error(f"Unexpected error processing {filename}: {e}")
-            candidate_result = CandidateResult(
-                filename=filename,
-                parsing_error=f"Unexpected error: {str(e)}",
-            )
-
+        candidate_result = results_map[file_info["filename"]]
         if candidate_result.parsing_error and not candidate_result.candidate_name:
             batch_summary.failed += 1
             screening_result.failed.append(candidate_result)
@@ -152,7 +176,8 @@ def run_pipeline(input_dir: str, output_path: str, config: Config | None = None)
     with open(output_path_obj, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False, default=str)
 
-    logger.info(f"Results written to {output_path}")
+    elapsed = time.time() - start_time
+    logger.info(f"Results written to {output_path} in {elapsed:.1f}s")
     logger.info(f"Batch summary: {batch_summary.model_dump()}")
 
     return screening_result
