@@ -66,7 +66,7 @@ export default function Hero({ onData, showToast }) {
         </div>
         <h3 className="text-sm font-semibold text-zinc-900 mb-1">Screen Your Resumes</h3>
         <p className="text-xs text-zinc-400 mb-6">
-          Runs the screening pipeline on the <code className="bg-zinc-100 px-1.5 py-0.5 rounded text-zinc-600">./resumes</code> directory
+          Runs the screening pipeline on the <code className="bg-zinc-100 px-1.5 py-0.5 rounded text-zinc-600">./data/resumes</code> directory
         </p>
         <button
           onClick={handleScreen}

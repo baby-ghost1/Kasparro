@@ -28,8 +28,8 @@ FRONTEND_DIST = REPO_ROOT / "frontend" / "dist"
 
 
 class ScreenRequest(BaseModel):
-    input_dir: str = "./resumes"
-    output_path: str = "./output/results.json"
+    input_dir: str = "./data/resumes"
+    output_path: str = "./data/output/results.json"
 
 
 class ScreenResponse(BaseModel):
@@ -66,7 +66,7 @@ def screen_resumes(request: ScreenRequest):
 
 
 @app.get("/api/results")
-def get_results(output_path: str = "./output/results.json"):
+def get_results(output_path: str = "./data/output/results.json"):
     try:
         return FileResponse(output_path, media_type="application/json")
     except FileNotFoundError:

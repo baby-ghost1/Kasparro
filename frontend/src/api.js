@@ -1,6 +1,6 @@
 const API = '/api';
 
-export async function startScreening(inputDir = './resumes', outputPath = './output/results.json') {
+export async function startScreening(inputDir = './data/resumes', outputPath = './data/output/results.json') {
   const res = await fetch(`${API}/screen`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

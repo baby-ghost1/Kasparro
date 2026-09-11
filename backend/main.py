@@ -106,12 +106,12 @@ def main():
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
     sp_screen = subparsers.add_parser("screen", help="Run the screening pipeline")
-    sp_screen.add_argument("--input", "-i", default="./resumes", help="Input directory with resumes")
-    sp_screen.add_argument("--output", "-o", default="./output/results.json", help="Output JSON path")
+    sp_screen.add_argument("--input", "-i", default="./data/resumes", help="Input directory with resumes")
+    sp_screen.add_argument("--output", "-o", default="./data/output/results.json", help="Output JSON path")
     sp_screen.add_argument("--verbose", "-v", action="store_true", help="Verbose logging")
 
     sp_report = subparsers.add_parser("report", help="Show terminal report")
-    sp_report.add_argument("--results", "-r", default="./output/results.json", help="Results JSON path")
+    sp_report.add_argument("--results", "-r", default="./data/output/results.json", help="Results JSON path")
 
     sp_serve = subparsers.add_parser("serve", help="Start FastAPI server")
     sp_serve.add_argument("--port", "-p", type=int, default=8000, help="Port number")

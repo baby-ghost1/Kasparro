@@ -460,7 +460,7 @@
     <div class="upload-zone" id="uploadZone">
       <span class="icon">📄</span>
       <h3>Screen Your Resumes</h3>
-      <p>Click the button below to run the screening pipeline on <strong>./resumes</strong> directory</p>
+      <p>Click the button below to run the screening pipeline on <strong>./data/resumes</strong> directory</p>
       <button class="btn btn-primary" id="screenBtn" onclick="startScreening()">
         🚀 Start Screening
       </button>
@@ -559,7 +559,7 @@ async function startScreening() {
     const res = await fetch(`${API_BASE}/screen`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ input_dir: './resumes', output_path: './output/results.json' })
+      body: JSON.stringify({ input_dir: './data/resumes', output_path: './data/output/results.json' })
     });
 
     clearInterval(interval);
